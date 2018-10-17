@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/fishyu/.gradle/caches/modules-2/files-2.1/com.jakewharton.picasso/picasso2-okhttp3-downloader/1.1.0/f4f77eb62269c977c154765cd01587eda6488273/picasso2-okhttp3-downloader-1.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f4f77eb62269c977c154765cd01587eda6488273">
+        <dex dex="/Users/fishyu/Work/GitHub/SimpleAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/picasso2-okhttp3-downloader-1.1.0_37b6c9b5a0266ba97b148e4a48cae2a3b5cca04e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/fishyu/Work/GitHub/SimpleAndroid/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/Users/fishyu/Work/GitHub/SimpleAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_7a04ad3673f7125023a23402b665f5b56bd4cc1d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/fishyu/.android/build-cache/624d0eea1cf572738e7d61cc964a9db25c392034/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="fcd01fd11233459f546c437ec927e9b61bf7caf1">
+        <dex dex="/Users/fishyu/Work/GitHub/SimpleAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_86a9c8325ca5f4437fd8dbae8159971816b3f637/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/fishyu/.android/build-cache/869daf9f4bd790a66b070d4b97267534313a6c54/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8df0e365e40beb151bc42dee20817721a6cab7b0">
+        <dex dex="/Users/fishyu/Work/GitHub/SimpleAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7ff6f9e9dfadfff62e373581a9262549a84db047/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/fishyu/.android/build-cache/76827fb9f6c623afdfe065cd021f01e7e59d860a/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/fishyu/Work/GitHub/SimpleAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e931e927f779ea267bcf5decb1eb96a42ff48774/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/fishyu/.android/build-cache/5e3655cdd5e5f6380f997e4d4a561aefd6d3f796/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="/Users/fishyu/Work/GitHub/SimpleAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_73d1e82485845dad69381192b3b32602311b4dc0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/fishyu/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/26.0.0-alpha1/support-annotations-26.0.0-alpha1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="023ee503b631f69511e335a061ea008f8da60f40">
+        <dex dex="/Users/fishyu/Work/GitHub/SimpleAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-26.0.0-alpha1_5578d5a1ff4fe86aad2fae563741e43bcb9b0abe/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/fishyu/.android/build-cache/11f75d3c36a1bb9322e871aeff1f577b295031a8/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3a64f14f460e307f5dfce75e9804e20077d3e6e8">
+        <dex dex="/Users/fishyu/Work/GitHub/SimpleAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_22c4bb0eb37e54f4e63acf643062da0fc49b38f9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/fishyu/.android/build-cache/60106e168af5a71ff3d19dc5e45385e1027769b6/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2e92aa0163544a804a0b34f169ca61801770839a">
+        <dex dex="/Users/fishyu/Work/GitHub/SimpleAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_908fd49c116a79ca3f813ee592941e3feb655667/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/fishyu/.android/build-cache/ac115a5b3276e2c29815ae58ab5839c4517ce29f/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e176fd06c2ad5b50a2f5cb4de6000a83a7cb48f5">
+        <dex dex="/Users/fishyu/Work/GitHub/SimpleAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f4474bd09affb9d6bce1eae9dca1cf75f399e839/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/fishyu/.android/build-cache/f67bd9796f48a07bfc5a4c30ce42b614b52b92a8/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="952944218ecedea1554a513dec0c14d570642843">
+        <dex dex="/Users/fishyu/Work/GitHub/SimpleAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6906b2d9ef5300f6a0e7584b52df6cef18753f69/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/fishyu/Library/Android/sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/constraint-layout-solver-1.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="/Users/fishyu/Work/GitHub/SimpleAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/constraint-layout-solver-1.0.2_86abc8a3b84ff2f485a36caa26d29d7b316ac6b3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/fishyu/.android/build-cache/03e97e27fc270f8f3c2e1a47caab0ed7026cfd39/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="18d31838aa4fcc768a8a0516e22cc13b94655d89">
+        <dex dex="/Users/fishyu/Work/GitHub/SimpleAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_1d3570519bb7546e817809151b1e22056ea08cb2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/fishyu/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.1.10/fb1adb822ccb4967d48f6546691f67fa96400d97/rxjava-2.1.10.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="fb1adb822ccb4967d48f6546691f67fa96400d97">
+        <dex dex="/Users/fishyu/Work/GitHub/SimpleAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/rxjava-2.1.10_32e4076a411f8c627307e6e42434e0b94962cfd1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/fishyu/.android/build-cache/3453f6c4c4c93bde6c215ad874c59ed115540719/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6e59acc60349b1dce2d45afd44065275621531dd">
+        <dex dex="/Users/fishyu/Work/GitHub/SimpleAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_315253403d0ccb5cc1b38f83f1c5ccaaa48c107b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/fishyu/.android/build-cache/be17a4b04f83f1ad4583e41ac8ebbf4d498d78a2/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6d5b27636fc7090afd3d015bc86f802b050c946c">
+        <dex dex="/Users/fishyu/Work/GitHub/SimpleAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f8494a0bb4edbe0755b4b904f3e087de79b01bd0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/fishyu/Work/GitHub/SimpleAndroid/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8ffe5977c929b929f238b824144d2d43b1773d9a">
+        <dex dex="/Users/fishyu/Work/GitHub/SimpleAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_5a33b8c5172b47ced77bed924dfa1ffaaa9d5ca7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/fishyu/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.2/3edcfe49d2c6053a70a2a47e4e1c2f94998a49cf/gson-2.8.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3edcfe49d2c6053a70a2a47e4e1c2f94998a49cf">
+        <dex dex="/Users/fishyu/Work/GitHub/SimpleAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/gson-2.8.2_5de2184983f6e4eb808202b639c0bb6d6ba2b2dd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/fishyu/.android/build-cache/31297d999c29fddf6e2f44ecd8047ec49b49f3db/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="88246166d5afb106f532f6e6deae683c66b42c89">
+        <dex dex="/Users/fishyu/Work/GitHub/SimpleAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_4483a4bacf7ab4d84e539e9b3918ee53570c21b2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/fishyu/.android/build-cache/9f3dc5b51e07c06cb3e8a9dc440492cf1fad06b7/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c303cd985b36079044f1533d8d7d0e48e3978024">
+        <dex dex="/Users/fishyu/Work/GitHub/SimpleAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6c06f0571d11d3414bd7220f42c3562dda0cb8f2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/fishyu/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/adapter-rxjava2/2.3.0/f436637f9500ab5b8bc32afe556373180894b4a5/adapter-rxjava2-2.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f436637f9500ab5b8bc32afe556373180894b4a5">
+        <dex dex="/Users/fishyu/Work/GitHub/SimpleAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/adapter-rxjava2-2.3.0_5c2f15af0ed5846e11520f4104a6bd5dea9e8339/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/fishyu/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.14.0/102d7be47241d781ef95f1581d414b0943053130/okio-1.14.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="102d7be47241d781ef95f1581d414b0943053130">
+        <dex dex="/Users/fishyu/Work/GitHub/SimpleAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.14.0_8bbe0d4a75a9625b56c10a6a19d26f102ee76f9b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/fishyu/.android/build-cache/59573db44dabd32a3048cad52d48dae06c0972dc/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e70a3fed299d84cd868614e11021664d72b8e488">
+        <dex dex="/Users/fishyu/Work/GitHub/SimpleAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d68643490bb3a885138a9c0e2c20af7038ebace6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/fishyu/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.10.0/7ef0f1d95bf4c0b3ba30bbae25e0e562b05cf75e/okhttp-3.10.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7ef0f1d95bf4c0b3ba30bbae25e0e562b05cf75e">
+        <dex dex="/Users/fishyu/Work/GitHub/SimpleAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-3.10.0_ea7fa5375d73ed6b81572b964255c3650e8432e3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/fishyu/.gradle/caches/modules-2/files-2.1/org.reactivestreams/reactive-streams/1.0.2/323964c36556eb0e6209f65c1cef72b53b461ab8/reactive-streams-1.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="323964c36556eb0e6209f65c1cef72b53b461ab8">
+        <dex dex="/Users/fishyu/Work/GitHub/SimpleAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/reactive-streams-1.0.2_0e2eb024a21845dd21043240bac8ce6b8e5478a6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/fishyu/Work/GitHub/SimpleAndroid/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/Users/fishyu/Work/GitHub/SimpleAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_7a04ad3673f7125023a23402b665f5b56bd4cc1d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/fishyu/.android/build-cache/33b643b03713b12fef9a18be0ea5e81031c7036d/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ace69012558dde2984bc67a43c5e45736282dc38">
+        <dex dex="/Users/fishyu/Work/GitHub/SimpleAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2783b8f80df4362a1a3a5e5155c65f787fc4e65f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/fishyu/.android/build-cache/477e11137349a249773ca66d32a922c7e0f16f87/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1e90b641e3b5c9e9c63dc0b320d8dc1fe649bc9f">
+        <dex dex="/Users/fishyu/Work/GitHub/SimpleAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c3525fb8104a609c4ee9f22f9ce77873f33fb7d2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/fishyu/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/Users/fishyu/Work/GitHub/SimpleAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/picasso-2.5.2_dc689096174738182de97a0936e8cf073937f504/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/fishyu/.gradle/caches/modules-2/files-2.1/nl.qbusict/cupboard/2.2.0/dc6f78fc951c5bdeec92c14c6dd6adc9ce6195d0/cupboard-2.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="dc6f78fc951c5bdeec92c14c6dd6adc9ce6195d0">
+        <dex dex="/Users/fishyu/Work/GitHub/SimpleAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/cupboard-2.2.0_1b278a964acd840a04428a7aa2e59264a847031f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/fishyu/.android/build-cache/37381c307f27a93fede8f7732cb105654ea049ad/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2bac9385ea008561a30419c09e9230a8681b3e09">
+        <dex dex="/Users/fishyu/Work/GitHub/SimpleAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f8ce87373e486aa916388fcbfeed0098d0d434ba/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/fishyu/.android/build-cache/39f2c8beb45cdf01c6f2bf555a4ffdaa042ce027/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c4f45092eee6cdf1a5dbd597b2b6819be652ce2e">
+        <dex dex="/Users/fishyu/Work/GitHub/SimpleAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0f17c45060d8afb4341f99b8c76f4ea3efe37179/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/fishyu/.android/build-cache/f6c09e58565a69ca71b0d1c260c1113e1ed1765c/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9935891f23923f39d002087085d9696568a9f657">
+        <dex dex="/Users/fishyu/Work/GitHub/SimpleAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_cbc0709d89a5fb54bdc305d857a79985873817b5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/fishyu/.gradle/caches/modules-2/files-2.1/com.squareup.haha/haha/2.0.3/640a438d2d415c056ca6a673ac26b183b044e160/haha-2.0.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="640a438d2d415c056ca6a673ac26b183b044e160">
+        <dex dex="/Users/fishyu/Work/GitHub/SimpleAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/haha-2.0.3_5e56e10bdb31807737f22a5b40dc4f0e65b3c7c0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/fishyu/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/logging-interceptor/3.10.0/55f574ec622f65ac9c0e2e922d3ffa01dc4f139e/logging-interceptor-3.10.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="55f574ec622f65ac9c0e2e922d3ffa01dc4f139e">
+        <dex dex="/Users/fishyu/Work/GitHub/SimpleAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/logging-interceptor-3.10.0_2325bf9f406f30c8d7d085cfdd4188c2cf2330ae/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/fishyu/.android/build-cache/8a4378888022698648ba7d740a9adfe96963a3ca/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="47471eb19df288158b00b8d9cfa41bce7373f5cc">
+        <dex dex="/Users/fishyu/Work/GitHub/SimpleAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_bf9394ac77ec6175693c46d19092eec24de59b0c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/fishyu/Work/GitHub/SimpleAndroid/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="b80797607ea2906f60778319d37282658f43d0a7">
+        <dex dex="/Users/fishyu/Work/GitHub/SimpleAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_5a33b8c5172b47ced77bed924dfa1ffaaa9d5ca7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/fishyu/.android/build-cache/2702bb01ab2e9151b59aa418f9f48547488b7b3a/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="14889e022db94047ceadff1cf5e7984139a4eb8e">
+        <dex dex="/Users/fishyu/Work/GitHub/SimpleAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c27f76a6103af5de2cb11d90b9e71cefd7ae866d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/fishyu/.gradle/caches/modules-2/files-2.1/org.aspectj/aspectjrt/1.8.5/39a8ff2d1f79267907f5573c090b342b040b9682/aspectjrt-1.8.5.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="39a8ff2d1f79267907f5573c090b342b040b9682">
+        <dex dex="/Users/fishyu/Work/GitHub/SimpleAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/aspectjrt-1.8.5_f65dca7abeb59c5daa189524879c5805ac21ddf4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/fishyu/.android/build-cache/88a90ae24f5c54028be2903221cf582f750b644e/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="cddcd0fb93bc70e27325f2f715b2710332004ebb">
+        <dex dex="/Users/fishyu/Work/GitHub/SimpleAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ac4541f1f0c581b1a54d725987312ecc4b4fbea8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/fishyu/.android/build-cache/4e96b7866d53d688f8917a686a2d0c27f008079f/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2cce451e639f1d9ab643786fd303038f7546835a">
+        <dex dex="/Users/fishyu/Work/GitHub/SimpleAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_46ca26b57fdeb85dc2044d6a74ee0ecc9544ce96/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/fishyu/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.3.0/9e09011e9767bb76b5e27c9b8223476b93b14631/converter-gson-2.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9e09011e9767bb76b5e27c9b8223476b93b14631">
+        <dex dex="/Users/fishyu/Work/GitHub/SimpleAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/converter-gson-2.3.0_8bf670575c7d522e9b555783d1effa5270085e8a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/fishyu/.android/build-cache/9f3dc5b51e07c06cb3e8a9dc440492cf1fad06b7/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="c303cd985b36079044f1533d8d7d0e48e3978024">
+        <dex dex="/Users/fishyu/Work/GitHub/SimpleAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6c06f0571d11d3414bd7220f42c3562dda0cb8f2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/fishyu/.gradle/caches/modules-2/files-2.1/com.jakewharton.hugo/hugo-annotations/1.2.1/b01150795c5cdca1eb7e501bf00f105ff0e31501/hugo-annotations-1.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b01150795c5cdca1eb7e501bf00f105ff0e31501">
+        <dex dex="/Users/fishyu/Work/GitHub/SimpleAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/hugo-annotations-1.2.1_fe768c557a1b85725f5b024d13e63e0bd6dca650/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/fishyu/.android/build-cache/5f8184b25bc3aa40e5a6641ae594b5c89defdbac/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8aed69fa98a0fecd6f3b348699fb7e218ad1e97c">
+        <dex dex="/Users/fishyu/Work/GitHub/SimpleAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7208eccdfaa74468c9f682bfcd50ebe8948b59b3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/fishyu/.android/build-cache/bd1b1685069e51c5958104ea7e18f505322c1bd1/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6a022bf00ccd0948a8180c505e8e458bbddd43a6">
+        <dex dex="/Users/fishyu/Work/GitHub/SimpleAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_93b316cc86a08c9ab22711bb7669540984bd2950/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/fishyu/.gradle/caches/modules-2/files-2.1/com.squareup.leakcanary/leakcanary-watcher/1.5.4/5e3dadce30fd748563219945d867a2e96f287931/leakcanary-watcher-1.5.4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5e3dadce30fd748563219945d867a2e96f287931">
+        <dex dex="/Users/fishyu/Work/GitHub/SimpleAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/leakcanary-watcher-1.5.4_131678a7333cc04a5ddd5cf46fcda24295dc9938/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/fishyu/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife-annotations/8.8.1/bc373fb6bc7bca3035041b924f158fd2b946ee8d/butterknife-annotations-8.8.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="bc373fb6bc7bca3035041b924f158fd2b946ee8d">
+        <dex dex="/Users/fishyu/Work/GitHub/SimpleAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/butterknife-annotations-8.8.1_cd2e9aace6bfa3a1c91e4add32d5aa93770a8264/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/fishyu/.gradle/caches/modules-2/files-2.1/com.google.dagger/dagger/2.14.1/3784d6ed15ecebfa999b26ed0aaeb2b4194e0d3/dagger-2.14.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="03784d6ed15ecebfa999b26ed0aaeb2b4194e0d3">
+        <dex dex="/Users/fishyu/Work/GitHub/SimpleAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/dagger-2.14.1_2fa0b5f3ec215710d4a102ba5ac728c1cbab758a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/fishyu/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.3.0/bcacde6a8ccedcc56c127403d26b76072fe6214d/retrofit-2.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="bcacde6a8ccedcc56c127403d26b76072fe6214d">
+        <dex dex="/Users/fishyu/Work/GitHub/SimpleAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/retrofit-2.3.0_d51bcffe296b9c701608d6ae5b16ce12f94b70a9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/fishyu/.android/build-cache/c82419bc3f1cca6e6efdd7697cfed6c3a938cc34/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6a2bcb61342d09fe9acf55c9daf63961c8866cc0">
+        <dex dex="/Users/fishyu/Work/GitHub/SimpleAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_1ca53bb765fa2073f51c6c417f2d48b02a11c626/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/fishyu/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="/Users/fishyu/Work/GitHub/SimpleAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/javax.inject-1_c174adae51016ab7451d88ea4f1457688ccaa5de/classes.dex" />
+    </item>
+
+</items>

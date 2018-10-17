@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AcmesTheme.ActionBar" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+        <item name="android:textColorPrimary">@color/textColorActionBar</item>
+    </style>
+
+    <style name="AcmesTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+        <item name="android:textColorPrimary">@color/textColorActionBar</item>
+    </style>
+
+
+    <style name="AppTheme" parent="AcmesTheme.ActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="AcmeApplicationTheme" parent="AppTheme"></style>
+
+    <style name="AcmeSplashTheme" parent="AcmesTheme.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="MainActivityTheme" parent="AcmesTheme.NoActionBar">
+    </style>
+
+</resources>

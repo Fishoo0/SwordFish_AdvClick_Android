@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="SmallText">12sp</dimen>
+    <dimen name="NormalText">14sp</dimen>
+    <dimen name="LargeText">18sp</dimen>
+
+    <dimen name="HintText">@dimen/NormalText</dimen>
+
+    <dimen name="common_margin">10dp</dimen>
+    <dimen name="common_margin_horizontal">10dp</dimen>
+    <dimen name="common_margin_vertical">10dp</dimen>
+
+
+</resources>

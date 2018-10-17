@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF908F</color>
+    <color name="colorPrimaryLight">#FFC2BF</color>
+    <color name="colorPrimaryDark">#C96062</color>
+
+    <!--   theme UI controls like checkboxes and text fields -->
+    <color name="colorAccent">#FF908F</color>
+
+
+    <color name="colorSecondary">#FFFFFF</color>
+    <color name="colorSecondaryLight">#FFFFFF</color>
+    <color name="colorSecondaryDark">#FFFFFF</color>
+
+    <color name="textColorPrimary">#FF000000</color>
+    <color name="textColorSecondary">#b3000000</color>
+    <color name="textColorHint">#80000000</color>
+
+    <color name="textColorActionBar">#FFFFFFFF</color>
+
+</resources>
