@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.acmes.acmes"
+    package="acmes.swordfish.advclick"
     android:versionCode="20180101"
     android:versionName="1.0">
 
@@ -9,7 +9,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
-        android:name="com.acmes.acmes.AcmesApplication"
+        android:name=".AdvClickApplication"
         android:allowBackup="false"
         android:hardwareAccelerated="true"
         android:icon="@mipmap/ic_launcher"
@@ -18,7 +18,7 @@
         android:supportsRtl="true"
         android:theme="@style/AcmeApplicationTheme">
         <activity
-            android:name="com.acmes.acmes.splash.SplashActivity"
+            android:name=".controler.main.MainActivity"
             android:theme="@style/AcmeSplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,22 +26,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.acmes.acmes.login.AcmesDispatcherActivity" />
-        <activity android:name="com.acmes.acmes.login.LoginActivity" />
+        <activity android:name=".controler.login.AcmesDispatcherActivity" />
+        <activity android:name=".controler.login.LoginActivity" />
         <activity
-            android:name="com.acmes.acmes.login.RegisterActivity"
-            android:parentActivityName=".login.LoginActivity" />
-        <activity
-            android:name="com.acmes.acmes.main.MainActivity"
-            android:theme="@style/MainActivityTheme" />
-        <activity android:name="com.acmes.acmes.login.LogoutActivity" />
-        <activity android:name=".videos.CategoriesActivity" />
-        <activity android:name=".videos.CollectionsActivity" />
-        <activity android:name=".videos.SearchActivity" />
-        <activity android:name=".message.MessageActivity" />
-        <activity android:name=".profile.ProfileActivity" />
-        <activity android:name=".settings.AboutActivity" />
-        <activity android:name=".settings.SettingActivity" />
+            android:name=".controler.login.RegisterActivity"
+            android:parentActivityName=".controler.login.LoginActivity" />
+        <!--<activity-->
+        <!--android:name=".controler.main.MainActivity"-->
+        <!--android:theme="@style/MainActivityTheme" />-->
+        <activity android:name=".controler.login.LogoutActivity" />
+        <activity android:name=".controler.videos.CategoriesActivity" />
+        <activity android:name=".controler.videos.CollectionsActivity" />
+        <activity android:name=".controler.videos.SearchActivity" />
+        <activity android:name=".controler.settings.AboutActivity" />
     </application>
 
 </manifest>

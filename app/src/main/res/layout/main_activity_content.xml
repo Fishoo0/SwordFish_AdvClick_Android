@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/fragment"
-        class="com.acmes.acmes.videos.VideosFragment"
+        class="acmes.swordfish.advclick.controler.videos.VideosFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
