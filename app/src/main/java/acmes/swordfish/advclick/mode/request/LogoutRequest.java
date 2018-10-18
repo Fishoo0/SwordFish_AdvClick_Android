@@ -10,11 +10,11 @@ import io.reactivex.Observable;
 
 public class LogoutRequest extends AcmesRequest {
 
-    public String user_name;
-    public String user_password;
+    public String name;
+    public String password;
 
     public LogoutRequest(String userName) {
-        user_name = userName;
+        name = userName;
     }
 
     @Override

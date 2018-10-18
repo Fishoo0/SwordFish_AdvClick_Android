@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true" />
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/navigation_view">
+
+        <fragment
+            android:id="@+id/with_draw_fragment"
+            class="acmes.swordfish.advclick.controler.withdraw.WithDrawFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="fill_horizontal"
+            android:tag="@string/value_tag_with_draw" />
+
+        <fragment
+            android:id="@+id/function_fragment"
+            class="acmes.swordfish.advclick.controler.function.FunctionFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:tag="@string/value_tag_function" />
+
+        <fragment
+            android:id="@+id/buy_fragment"
+            class="acmes.swordfish.advclick.controler.buy.BuyFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:tag="@string/value_tag_buy" />
+
+
+        <fragment
+            android:id="@+id/profile_fragment"
+            class="acmes.swordfish.advclick.controler.profile.ProfileFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:tag="@string/value_tag_profile" />
+
+        <fragment
+            android:id="@+id/youmeng_fragment"
+            class="acmes.swordfish.advclick.controler.youmeng.YouMengFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:tag="@string/value_tag_youmeng" />
+
+    </FrameLayout>
+
+</RelativeLayout>

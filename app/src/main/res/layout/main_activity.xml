@@ -16,6 +16,7 @@
             android:layout_weight="1"
             android:drawableTop="@drawable/leak_canary_icon"
             android:onClick="onClick"
+            android:tag="@string/value_tag_with_draw"
             android:text="提现"
             android:textColor="#000000" />
 
@@ -27,6 +28,7 @@
             android:layout_weight="1"
             android:drawableTop="@drawable/leak_canary_icon"
             android:onClick="onClick"
+            android:tag="@string/value_tag_function"
             android:text="功能"
             android:textColor="#000000" />
 
@@ -37,6 +39,7 @@
             android:layout_weight="1"
             android:drawableTop="@drawable/leak_canary_icon"
             android:onClick="onClick"
+            android:tag="@string/value_tag_buy"
             android:text="购买"
             android:textColor="#000000" />
 
@@ -48,6 +51,7 @@
             android:layout_weight="1"
             android:drawableTop="@drawable/leak_canary_icon"
             android:onClick="onClick"
+            android:tag="@string/value_tag_profile"
             android:text="资料"
             android:textColor="#000000" />
 
@@ -58,6 +62,7 @@
             android:layout_weight="1"
             android:drawableTop="@drawable/leak_canary_icon"
             android:onClick="onClick"
+            android:tag="@string/value_tag_youmeng"
             android:text="友盟"
             android:textColor="#000000" />
 
@@ -66,6 +71,44 @@
     <FrameLayout
         android:id="@+id/fragment_container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent">
+
+        <fragment
+            class="acmes.swordfish.advclick.controler.withdraw.WithDrawFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:tag="@string/value_tag_with_draw" />
+
+
+        <fragment
+            android:id="@+id/function_fragment"
+            class="acmes.swordfish.advclick.controler.function.FunctionFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:tag="@string/value_tag_function" />
+
+        <fragment
+            android:id="@+id/buy_fragment"
+            class="acmes.swordfish.advclick.controler.buy.BuyFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:tag="@string/value_tag_buy" />
+
+
+        <fragment
+            android:id="@+id/profile_fragment"
+            class="acmes.swordfish.advclick.controler.profile.ProfileFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:tag="@string/value_tag_profile" />
+
+        <fragment
+            android:id="@+id/youmeng_fragment"
+            class="acmes.swordfish.advclick.controler.youmeng.YouMengFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:tag="@string/value_tag_youmeng" />
+
+    </FrameLayout>
 
 </RelativeLayout>

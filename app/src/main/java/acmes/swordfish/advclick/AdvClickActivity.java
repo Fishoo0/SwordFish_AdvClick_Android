@@ -51,7 +51,7 @@ public class AdvClickActivity<T extends AdvClickMode> extends SimpleActivity<T> 
     public void onFailure(SimpleRequest request, Throwable exception) {
         super.onFailure(request, exception);
         Log.e(TAG, exception.getMessage());
-        Toast.makeText(this, exception.getMessage(), Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, exception.getMessage(), Toast.LENGTH_LONG).show();
 
         getSwipeRefreshLayout().setRefreshing(false);
     }

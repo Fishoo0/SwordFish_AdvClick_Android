@@ -10,14 +10,44 @@ import java.io.Serializable;
 
 public class BUser implements Serializable {
 
-    @SerializedName("user_id")
+    @SerializedName("id")
     public String mUserId;
 
-    @SerializedName("user_name")
+    @SerializedName("name")
     public String mUserName;
 
-    @SerializedName("user_password")
+    @SerializedName("password")
     public String mUserPassword;
+
+    @SerializedName("cover")
+    public String mCover;
+
+    @SerializedName("gender")
+    public String mGender;
+
+    @SerializedName("location")
+    public String mLocation;
+
+    @SerializedName("about")
+    public String mAbout;
+
+    @SerializedName("im_qq")
+    public String mQQ;
+
+    @SerializedName("alipay")
+    public String mAlipay;
+
+    @SerializedName("alipay_name")
+    public String mAlipayName;
+
+    @SerializedName("prime_level")
+    public int mPrimeLevel;
+
+    @SerializedName("prime_open_time")
+    public long mPrimeOpenTime;
+
+    @SerializedName("prime_period")
+    public long mPrimePeriod;
 
     public BUser(String user_name, String user_password) {
         mUserName = user_name;

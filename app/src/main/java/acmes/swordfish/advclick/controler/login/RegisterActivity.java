@@ -6,14 +6,14 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
 
-import acmes.swordfish.advclick.AdvClickActivity;
-import acmes.swordfish.advclick.R;
-import acmes.swordfish.advclick.mode.bean.BUser;
-import acmes.swordfish.advclick.mode.request.RegisterRequest;
 import com.acmes.simpleandroid.mvc.model.SimpleRequest;
 import com.acmes.simpleandroid.mvc.model.SimpleResponse;
 import com.acmes.simpleandroid.utils.Utils;
 
+import acmes.swordfish.advclick.AdvClickActivity;
+import acmes.swordfish.advclick.R;
+import acmes.swordfish.advclick.mode.bean.BUser;
+import acmes.swordfish.advclick.mode.request.RegisterRequest;
 import butterknife.BindView;
 
 /**
@@ -30,16 +30,24 @@ public class RegisterActivity extends AdvClickActivity<LoginMode> {
     @BindView(R.id.user_name)
     EditText mUserName;
 
-
     @BindView(R.id.user_password)
     EditText mUserPassword;
+
+    @BindView(R.id.im_qq)
+    EditText mQQ;
+
+    @BindView(R.id.alipay)
+    EditText mAlipay;
+
+    @BindView(R.id.alipay_name)
+    EditText mAlipayName;
 
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.register_activity);
-        getSupportActionBar().setTitle("Register");
+        getSupportActionBar().setTitle("注 册");
 
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -57,18 +65,18 @@ public class RegisterActivity extends AdvClickActivity<LoginMode> {
         super.onResponse(request, response);
         if (request instanceof RegisterRequest) {
             if (response.isSuccess()) {
-                AcmesDispatcherActivity.jumpToThis(
+                DispatcherActivity.jumpToThis(
                         this,
-                        AcmesDispatcherActivity.CMD_LOGIN,
-                        AcmesDispatcherActivity
+                        DispatcherActivity.CMD_LOGIN,
+                        DispatcherActivity
                                 .getJumpToThisIntent(this)
                                 .putExtra(LoginActivity.LOGIN_INFO,
-                                        new BUser(((RegisterRequest) request).user_name, ((RegisterRequest) request).user_password))
+                                        new BUser(((RegisterRequest) request).name, ((RegisterRequest) request).password))
                 );
                 finish();
             }
         }
-        Utils.showToast(response.getMessage() + " " + response.getData());
+        Utils.showToast(response.getMessage());
     }
 
 
@@ -76,7 +84,12 @@ public class RegisterActivity extends AdvClickActivity<LoginMode> {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.action_login:
-                getModel().register(new RegisterRequest(mUserName.getText().toString(), mUserPassword.getText().toString()));
+                getModel().register(new RegisterRequest(
+                        mUserName.getText().toString(),
+                        mUserPassword.getText().toString(),
+                        mQQ.getText().toString(),
+                        mAlipay.getText().toString(),
+                        mAlipayName.getText().toString()));
                 return true;
         }
         return super.onOptionsItemSelected(item);

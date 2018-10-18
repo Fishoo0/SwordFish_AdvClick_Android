@@ -96,6 +96,12 @@ public abstract class SimpleFragment<T extends SimpleModel> extends Fragment imp
     }
 
     @Override
+    public void onDetach() {
+        super.onDetach();
+        Log.v(TAG, "onDetach");
+    }
+
+    @Override
     public void onRequestStart(SimpleRequest request) {
         Log.v(TAG, "onRequestStart request -> " + request);
     }

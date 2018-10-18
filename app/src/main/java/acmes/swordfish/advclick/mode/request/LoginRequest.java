@@ -1,7 +1,6 @@
 package acmes.swordfish.advclick.mode.request;
 
 import acmes.swordfish.advclick.AdvClickAPI;
-
 import io.reactivex.Observable;
 
 /**
@@ -10,19 +9,17 @@ import io.reactivex.Observable;
 
 public class LoginRequest extends AcmesRequest {
 
-    public String user_name;
-    public String user_password;
-
+    public String name;
+    public String password;
 
     public LoginRequest(String userName, String userPassword) {
-        user_name = userName;
-        user_password = userPassword;
+        name = userName;
+        password = userPassword;
     }
 
     public LoginRequest(String userName) {
-        user_name = userName;
+        name = userName;
     }
-
 
     @Override
     public Observable callAPI(AdvClickAPI api) {

@@ -9,7 +9,7 @@ import android.widget.TextView;
 import acmes.swordfish.advclick.AdvClickActivity;
 import acmes.swordfish.advclick.AdvClickApplication;
 import acmes.swordfish.advclick.R;
-import acmes.swordfish.advclick.controler.login.AcmesDispatcherActivity;
+import acmes.swordfish.advclick.controler.login.DispatcherActivity;
 import com.acmes.simpleandroid.utils.Utils;
 
 import butterknife.BindView;
@@ -45,7 +45,7 @@ public class SplashActivity extends AdvClickActivity implements AdvClickApplicat
         Log.e(TAG, "onInitializing -> " + progress);
 //        mInitialProgress.setText(progress + " %");
         if (progress == 100) {
-            AcmesDispatcherActivity.jumpToThis(this);
+            DispatcherActivity.jumpToThis(this);
         }
     }
 

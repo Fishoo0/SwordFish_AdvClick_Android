@@ -2,28 +2,19 @@ package acmes.swordfish.advclick.controler.youmeng;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import acmes.swordfish.advclick.AdvClickFragment;
 import acmes.swordfish.advclick.R;
+import acmes.swordfish.advclick.controler.main.MainContentFragment;
 
 /**
  * Created by fishyu on 2018/10/17.
  */
 
-public class YouMengFragment extends AdvClickFragment {
+public class YouMengFragment extends MainContentFragment {
 
-    public static Fragment getInstance(FragmentManager fragmentManager) {
-        Fragment fragment = fragmentManager.findFragmentByTag(YouMengFragment.class.getSimpleName());
-        if (fragment == null) {
-            fragment = new YouMengFragment();
-        }
-        return fragment;
-    }
 
     @Nullable
     @Override

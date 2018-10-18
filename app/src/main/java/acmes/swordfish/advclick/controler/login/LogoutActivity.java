@@ -45,7 +45,7 @@ public class LogoutActivity extends AdvClickActivity<LoginMode> {
         super.onRequestStart(request);
 
         // jump to LoginDispatchActivity
-        AcmesDispatcherActivity.jumpToThis(this);
+        DispatcherActivity.jumpToThis(this);
         finish();
 
         Utils.showToast("U have been logout successfully!");

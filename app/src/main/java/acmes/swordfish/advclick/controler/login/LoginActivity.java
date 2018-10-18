@@ -9,15 +9,16 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
+
+import com.acmes.simpleandroid.mvc.model.SimpleRequest;
+import com.acmes.simpleandroid.mvc.model.SimpleResponse;
+import com.acmes.simpleandroid.utils.Utils;
 
 import acmes.swordfish.advclick.AdvClickActivity;
 import acmes.swordfish.advclick.R;
 import acmes.swordfish.advclick.mode.bean.BUser;
 import acmes.swordfish.advclick.mode.request.LoginRequest;
-import com.acmes.simpleandroid.mvc.model.SimpleRequest;
-import com.acmes.simpleandroid.mvc.model.SimpleResponse;
-import com.acmes.simpleandroid.utils.Utils;
-
 import butterknife.BindView;
 import butterknife.OnClick;
 
@@ -69,7 +70,7 @@ public class LoginActivity extends AdvClickActivity<LoginMode> implements View.O
             }, 500);
         }
 
-        getSupportActionBar().setTitle("Login");
+        getSupportActionBar().setTitle("登陆");
     }
 
 
@@ -85,11 +86,11 @@ public class LoginActivity extends AdvClickActivity<LoginMode> implements View.O
     public void onResponse(SimpleRequest request, SimpleResponse response) {
         super.onResponse(request, response);
         if (response.isSuccess()) {
-            AcmesDispatcherActivity.jumpToThis(this);
+            DispatcherActivity.jumpToThis(this);
             finish();
         }
 
-        Utils.showToast(response.getMessage() + " " + response.getData());
+        Utils.showToast(response.getMessage());
         mSwipeRefreshLayout.setRefreshing(false);
     }
 
@@ -125,6 +126,7 @@ public class LoginActivity extends AdvClickActivity<LoginMode> implements View.O
                 startActivity(new Intent(this, RegisterActivity.class));
                 break;
             case R.id.forget_password:
+                Toast.makeText(this, "请尝试联系管理员", Toast.LENGTH_LONG).show();
                 break;
         }
     }

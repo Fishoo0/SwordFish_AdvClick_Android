@@ -2,13 +2,14 @@ package acmes.swordfish.advclick.controler.login;
 
 import android.text.TextUtils;
 
+import com.acmes.simpleandroid.mvc.model.SimpleRequest;
+import com.acmes.simpleandroid.mvc.model.SimpleResponse;
+
 import acmes.swordfish.advclick.AdvClickMode;
 import acmes.swordfish.advclick.mode.bean.BUser;
 import acmes.swordfish.advclick.mode.request.LoginRequest;
 import acmes.swordfish.advclick.mode.request.LogoutRequest;
 import acmes.swordfish.advclick.mode.request.RegisterRequest;
-import com.acmes.simpleandroid.mvc.model.SimpleRequest;
-import com.acmes.simpleandroid.mvc.model.SimpleResponse;
 
 /**
  * Created by fishyu on 2018/1/2.
@@ -51,10 +52,9 @@ public class LoginMode extends AdvClickMode {
     public void onRequestStart(SimpleRequest request) {
         // do it first
         if (request instanceof LogoutRequest) {
-            BUser user = new BUser(((LogoutRequest) request).user_name, ((LogoutRequest) request).user_password);
+            BUser user = new BUser(((LogoutRequest) request).name, ((LogoutRequest) request).password);
             mAccountManager.removeUser(user);
         }
-
         super.onRequestStart(request);
     }
 
@@ -63,8 +63,8 @@ public class LoginMode extends AdvClickMode {
         // do it first
         if (response.isSuccess() && response.getData() != null) {
             if (request instanceof LoginRequest && response.getData() instanceof BUser) {
-                BUser user = new BUser(((LoginRequest) request).user_name, ((LoginRequest) request).user_password);
-                if (!TextUtils.isEmpty(((LoginRequest) request).user_password)) {
+                BUser user = new BUser(((LoginRequest) request).name, ((LoginRequest) request).password);
+                if (!TextUtils.isEmpty(((LoginRequest) request).password)) {
                     mAccountManager.addUser(user);
                 }
             } else if (request instanceof RegisterRequest && response.getData() instanceof BUser) {

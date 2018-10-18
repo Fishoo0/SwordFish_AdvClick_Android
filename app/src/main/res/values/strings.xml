@@ -3,4 +3,9 @@
     <string name="value_splash_version">CopyRight @AcmeBad by Version %s </string>
 
     <string name="value_common_net_error">网络错误 :(</string>
+    <string name="value_tag_with_draw">with_draw</string>
+    <string name="value_tag_function">function</string>
+    <string name="value_tag_buy">buy</string>
+    <string name="value_tag_profile">profile</string>
+    <string name="value_tag_youmeng">youmeng</string>
 </resources>

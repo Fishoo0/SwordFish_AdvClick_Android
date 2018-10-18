@@ -18,7 +18,7 @@
         android:supportsRtl="true"
         android:theme="@style/AcmeApplicationTheme">
         <activity
-            android:name=".controler.main.MainActivity"
+            android:name=".controler.splash.SplashActivity"
             android:theme="@style/AcmeSplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,7 +26,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".controler.login.AcmesDispatcherActivity" />
+        <activity android:name=".controler.login.DispatcherActivity" />
         <activity android:name=".controler.login.LoginActivity" />
         <activity
             android:name=".controler.login.RegisterActivity"
@@ -35,10 +35,8 @@
         <!--android:name=".controler.main.MainActivity"-->
         <!--android:theme="@style/MainActivityTheme" />-->
         <activity android:name=".controler.login.LogoutActivity" />
-        <activity android:name=".controler.videos.CategoriesActivity" />
-        <activity android:name=".controler.videos.CollectionsActivity" />
-        <activity android:name=".controler.videos.SearchActivity" />
         <activity android:name=".controler.settings.AboutActivity" />
+        <activity android:name=".controler.main.MainActivityNavigation" />
     </application>
 
 </manifest>
