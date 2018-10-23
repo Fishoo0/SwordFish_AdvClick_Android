@@ -2,6 +2,7 @@ package acmes.swordfish.advclick;
 
 import com.acmes.simpleandroid.imp.Square.RetrofitSimpleModel;
 
+import acmes.swordfish.advclick.mode.AdvClickAPI;
 import retrofit2.Retrofit;
 
 /**

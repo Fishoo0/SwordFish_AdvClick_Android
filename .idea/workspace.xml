@@ -2,11 +2,14 @@
 <project version="4">
   <component name="AndroidLayouts">
     <shared>
-      <config />
+      <config>
+        <devices>
+          <device id="Nexus 6" />
+        </devices>
+      </config>
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="DispatcherActivity" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="CMakeSettings">
@@ -15,59 +18,54 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cfcf00f4-25c9-4a78-9b1a-8697c3ad84e4" name="Default" comment="Clean the shit commit">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/main/MainActivityNavigation.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/main/MainContentFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/utils/ViewUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/main_activity_navigation.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/menu/main_bottom_nav_items.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/menu/main_bottom_nav_items_full.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/settings/SettingFragment.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/videos/CategoriesActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/videos/CollectionsActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/videos/SearchActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/videos/VideoListAdapter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/videos/VideosFragment.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/mode/request/CategoriesRequest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/mode/request/CollectionRequest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/mode/request/SearchJavRequest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/mode/request/SearchRequest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/mode/request/VideoRequest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/mode/request/VideosRequest.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/login/AcmesDispatcherActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/login/DispatcherActivity.java" />
+    <list default="true" id="cfcf00f4-25c9-4a78-9b1a-8697c3ad84e4" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/adv_alipay_logo.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/advclick_erweima.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/main/ClickMode.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/mode/bean/BEarn.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/mode/bean/BSearch.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/mode/request/GetEarnRequest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/mode/request/RequestWithDrawRequest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/mode/request/UploadEarnRequest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/view/OnlineNumberTextView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/view/PrimeTrialTextView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/view/TickingTextView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/view/WithDrawSpinner.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/spinner_item.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/AdvClickAPI.java" afterPath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/mode/AdvClickAPI.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/AdvClickAPI.java" afterPath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/AdvClickAPI.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/AdvClickActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/AdvClickActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/buy/BuyFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/buy/BuyFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/AdvClickFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/AdvClickFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/AdvClickMode.java" afterPath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/AdvClickMode.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/function/FunctionFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/function/FunctionFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/login/LoginActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/login/LoginActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/login/DispatcherActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/login/DispatcherActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/login/LoginMode.java" afterPath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/login/LoginMode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/login/LogoutActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/login/LogoutActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/login/RegisterActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/login/RegisterActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/main/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/main/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/main/MainContentFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/main/MainContentFragment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/profile/ProfileFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/profile/ProfileFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/splash/SplashActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/splash/SplashActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/withdraw/WithDrawFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/withdraw/WithDrawFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/youmeng/YouMengFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/youmeng/YouMengFragment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/mode/bean/BUser.java" afterPath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/mode/bean/BUser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/mode/request/AcmesRequest.java" afterPath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/mode/request/AcmesRequest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/mode/request/LoginRequest.java" afterPath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/mode/request/LoginRequest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/mode/request/LogoutRequest.java" afterPath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/mode/request/LogoutRequest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/mode/request/RegisterRequest.java" afterPath="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/mode/request/RegisterRequest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/buy_fragment.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/buy_fragment.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/function_fragment.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/function_fragment.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/login_activity.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/login_activity.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/main_activity.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/main_activity.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/profile_fragment.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/profile_fragment.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/register_activity.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/register_activity.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/withdraw_fragment.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/withdraw_fragment.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/youmeng_fragment.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/youmeng_fragment.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simpleandroid/simpleandroid.iml" afterPath="$PROJECT_DIR$/simpleandroid/simpleandroid.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simpleandroid/src/main/java/com/acmes/simpleandroid/mvc/SimpleActivity.java" afterPath="$PROJECT_DIR$/simpleandroid/src/main/java/com/acmes/simpleandroid/mvc/SimpleActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simpleandroid/src/main/java/com/acmes/simpleandroid/mvc/SimpleFragment.java" afterPath="$PROJECT_DIR$/simpleandroid/src/main/java/com/acmes/simpleandroid/mvc/SimpleFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simpleandroid/src/main/java/com/acmes/simpleandroid/mvc/model/SimpleRequest.java" afterPath="$PROJECT_DIR$/simpleandroid/src/main/java/com/acmes/simpleandroid/mvc/model/SimpleRequest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simpleandroid/src/main/java/com/acmes/simpleandroid/utils/Utils.java" afterPath="$PROJECT_DIR$/simpleandroid/src/main/java/com/acmes/simpleandroid/utils/Utils.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -88,7 +86,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
-        <projects_view />
+        <projects_view>
+          <tree_state />
+        </projects_view>
       </state>
     </system>
   </component>
@@ -97,11 +97,43 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RegisterActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/login/RegisterActivity.java">
+      <file leaf-file-name="FunctionFragment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/function/FunctionFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="70" column="36" selection-start-line="70" selection-start-column="36" selection-end-line="70" selection-end-column="36" />
+            <state relative-caret-position="608">
+              <caret line="111" column="27" selection-start-line="111" selection-start-column="27" selection-end-line="111" selection-end-column="27" />
+              <folding>
+                <element signature="e#1890#3430#0" expanded="true" />
+                <element signature="e#3429#3430#0" expanded="true" />
+                <element signature="e#4095#4131#0" expanded="true" />
+                <element signature="e#4633#4664#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OnlineNumberTextView.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/view/OnlineNumberTextView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="665">
+              <caret line="35" column="29" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#768#769#0" expanded="true" />
+                <element signature="e#810#811#0" expanded="true" />
+                <element signature="e#914#968#0" expanded="true" />
+                <element signature="e#1052#1053#0" expanded="true" />
+                <element signature="e#1075#1076#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TickingTextView.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/view/TickingTextView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -109,13 +141,86 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DispatcherActivity.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/login/DispatcherActivity.java">
+      <file leaf-file-name="PrimeTrialTextView.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/view/PrimeTrialTextView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1463">
-              <caret line="77" column="13" selection-start-line="77" selection-start-column="13" selection-end-line="77" selection-end-column="13" />
+            <state relative-caret-position="456">
+              <caret line="37" column="116" selection-start-line="37" selection-start-column="116" selection-end-line="37" selection-end-column="116" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#758#759#0" expanded="true" />
+                <element signature="e#800#801#0" expanded="true" />
+                <element signature="e#904#961#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Math.java" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-25/java/lang/Math.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="717" column="25" selection-start-line="717" selection-start-column="25" selection-end-line="717" selection-end-column="25" />
+              <folding>
+                <element signature="e#30531#30532#0" expanded="true" />
+                <element signature="e#30596#30597#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Utils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/simpleandroid/src/main/java/com/acmes/simpleandroid/utils/Utils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="603">
+              <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="function_fragment.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/function_fragment.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1007">
+              <caret line="250" column="49" selection-start-line="250" selection-start-column="49" selection-end-line="250" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BUser.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/mode/bean/BUser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="179">
+              <caret line="86" column="34" selection-start-line="86" selection-start-column="34" selection-end-line="86" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BEarn.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/mode/bean/BEarn.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="684">
+              <caret line="38" column="42" selection-start-line="38" selection-start-column="42" selection-end-line="38" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BSearch.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/mode/bean/BSearch.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="20" column="43" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="43" />
+              <folding>
+                <element signature="e#445#446#0" expanded="true" />
+                <element signature="e#480#481#0" expanded="true" />
+                <element signature="e#516#517#0" expanded="true" />
+                <element signature="e#550#551#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -3065,61 +3170,63 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/login/LoginActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/login/RegisterActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/main/MainActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/videos/VideosFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/videos/VideoListAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/splash/SplashActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/main/MainActivityContentView.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/main/MainNavigationView.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/withdraw_fragment.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/setting_fragment.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/function_fragment.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/settings/SettingFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/youmeng_fragment.xml" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/main_activity.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/buy_fragment.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/main/MainContentFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/withdraw/WithDrawFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/function/FunctionFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/buy/BuyFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/youmeng/YouMengFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/main_activity_backstack.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/main/MainActivityBackStack.java" />
-        <option value="$PROJECT_DIR$/simpleandroid/src/main/java/com/acmes/simpleandroid/mvc/SimpleFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/main/MainActivity.java" />
-        <option value="$PROJECT_DIR$/simpleandroid/build.gradle" />
-        <option value="$PROJECT_DIR$/app/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/utils/ViewUtils.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/main_activity_navigation.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/menu/main_bottom_nav_items.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/mode/request/RegisterRequest.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/mode/request/LogoutRequest.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/mode/request/LoginRequest.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/login_activity.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/AdvClickAPI.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/login/AcmesDispatcherActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/mode/bean/BUser.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/AdvClickActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/main/MainActivityNavigation.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/profile_fragment.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/profile/ProfileFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/register_activity.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/login/LoginMode.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/login/DispatcherActivity.java" />
         <option value="$PROJECT_DIR$/simpleandroid/src/main/java/com/acmes/simpleandroid/imp/Square/RetrofitSimpleModel.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/login/LoginActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/login/LoginMode.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/login_activity.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/register_activity.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/profile_fragment.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/youmeng_fragment.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/buy_fragment.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/profile/ProfileFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/withdraw_fragment.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/spinner_item.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/view/WithDrawSpinner.java" />
+        <option value="$PROJECT_DIR$/simpleandroid/src/main/java/com/acmes/simpleandroid/mvc/SimpleActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/mode/request/UploadEarnRequest.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/AdvClickAPI.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/mode/request/GetEarnRequest.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/login/AdvClickMode.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/mode/bean/BEarn.java" />
+        <option value="$PROJECT_DIR$/simpleandroid/src/main/java/com/acmes/simpleandroid/mvc/SimpleFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/login/RegisterActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/login/DispatcherActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/AdvClickActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/main/MainContentFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/mode/request/WithDrawRequest.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/mode/request/RequestWithDrawRequest.java" />
+        <option value="$PROJECT_DIR$/simpleandroid/src/main/java/com/acmes/simpleandroid/mvc/model/SimpleRequest.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/AdvClickFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/mode/AdvClickAPI.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/withdraw/WithDrawFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/main/ClickMode.java" />
+        <option value="$PROJECT_DIR$/simpleandroid/src/main/java/com/acmes/simpleandroid/utils/Utils.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/view/CouterTextView.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/view/CounterTextView.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/view/PrimeTrivalTimeTextView.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/view/PrimeTrivalTextView.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/function_fragment.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/function/FunctionFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/view/PrimeTrialTextView.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/view/OnlineNumberTextView.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/mode/bean/BSearch.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/view/TickingTextView.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/mode/bean/BUser.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1412" />
+    <option name="width" value="1920" />
     <option name="height" value="1119" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -3130,12 +3237,15 @@
             <id />
           </State>
           <State>
+            <id>Android &gt; Lint &gt; Correctness</id>
+          </State>
+          <State>
             <id>Spelling</id>
           </State>
         </expanded-state>
         <selected-state>
           <State>
-            <id>SpellCheckingInspection</id>
+            <id>AndroidLintAppCompatCustomView</id>
           </State>
         </selected-state>
       </profile-state>
@@ -3166,6 +3276,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView">
+        <subPane />
+      </pane>
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
@@ -3176,22 +3290,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AdvClick" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AdvClick" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="AndroidView">
-        <subPane />
-      </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -3199,22 +3299,29 @@
     <property name="device.picker.selection" value="Nexus_6_API_23" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../GitHub/FragmentBackStackSample" />
     <property name="show.do.not.ask.upgrade.gradle.plugin" value="2.3.3" />
-    <property name="SearchEverywhereHistoryKey" value="Register&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/src/main/java/acmes/swordfish/advclick/controler/login/RegisterActivity.java&#10;Retrofi&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/simpleandroid/src/main/java/com/acmes/simpleandroid/imp/Square/RetrofitSimpleResponse.java&#10;Retro&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/simpleandroid/src/main/java/com/acmes/simpleandroid/imp/Square/RetrofitSimpleRequest.java&#10;Ret&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/simpleandroid/src/main/java/com/acmes/simpleandroid/imp/Square/RetrofitSimpleModel.java&#10;Retrofit&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/simpleandroid/src/main/java/com/acmes/simpleandroid/imp/Square/RetrofitSimpleModel.java&#10;Simp&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/simpleandroid/src/main/java/com/acmes/simpleandroid/mvc/model/SimpleModel.java&#10;AcmesRes&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/src/main/java/acmes/swordfish/advclick/mode/response/AcmesResponse.java&#10;LoginA&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/src/main/java/acmes/swordfish/advclick/controler/login/LoginActivity.java&#10;AdvClick&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/src/main/java/acmes/swordfish/advclick/AdvClickActivity.java&#10;LoginRe&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/src/main/java/acmes/swordfish/advclick/mode/request/LoginRequest.java&#10;SimpleReq&#9;PSI&#9;JAVA://com.acmes.simpleandroid.mvc.model.SimpleRequest&#10;LoginMO&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/src/main/java/acmes/swordfish/advclick/controler/login/LoginMode.java&#10;Adv&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/src/main/java/acmes/swordfish/advclick/AdvClickActivity.java&#10;AdvMo&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/src/main/java/acmes/swordfish/advclick/AdvClickMode.java&#10;API&#9;PSI&#9;JAVA://acmes.swordfish.advclick.AdvClickAPI&#10;Sim&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/simpleandroid/src/main/java/com/acmes/simpleandroid/mvc/model/SimpleResponse.java&#10;SimpleRes&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/simpleandroid/src/main/java/com/acmes/simpleandroid/mvc/model/SimpleResponse.java&#10;Login&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/src/main/java/acmes/swordfish/advclick/controler/login/LoginActivity.java&#10;Dispat&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/src/main/java/acmes/swordfish/advclick/controler/login/DispatcherActivity.java&#10;Regis&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/src/main/java/acmes/swordfish/advclick/controler/login/RegisterActivity.java&#10;Prof&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/src/main/java/acmes/swordfish/advclick/controler/profile/ProfileFragment.java&#10;Main&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/src/main/java/acmes/swordfish/advclick/controler/main/MainActivityNavigation.java&#10;SimpleA&#9;PSI&#9;JAVA://com.acmes.simpleandroid.mvc.SimpleActivity&#10;SimpleAci&#9;null&#9;null&#10;LoginM&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/src/main/java/acmes/swordfish/advclick/controler/login/LoginMode.java&#10;Advcli&#9;PSI&#9;JAVA://acmes.swordfish.advclick.AdvClickMode&#10;SImpleMo&#9;PSI&#9;JAVA://com.acmes.simpleandroid.mvc.model.SimpleModel&#10;LoginMo&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/src/main/java/acmes/swordfish/advclick/controler/login/LoginMode.java&#10;Dispa&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/src/main/java/acmes/swordfish/advclick/controler/login/AcmesDispatcherActivity.java&#10;MainAc&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/src/main/java/acmes/swordfish/advclick/controler/main/MainActivityNavigation.java&#10;LoginReq&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/src/main/java/acmes/swordfish/advclick/mode/request/LoginRequest.java&#10;Log&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/src/main/java/acmes/swordfish/advclick/mode/request/LogoutRequest.java&#10;Logou&#9;PSI&#9;JAVA://acmes.swordfish.advclick.controler.login.LogoutActivity&#10;Logout&#9;PSI&#9;JAVA://acmes.swordfish.advclick.mode.request.LogoutRequest&#10;MainA&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/src/main/java/acmes/swordfish/advclick/controler/main/MainActivityNavigation.java&#10;SimpleFra&#9;PSI&#9;JAVA://com.acmes.simpleandroid.mvc.SimpleFragment" />
+    <property name="SearchEverywhereHistoryKey" value="BUs&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/src/main/java/acmes/swordfish/advclick/mode/bean/BUser.java&#10;B&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/src/main/java/acmes/swordfish/advclick/mode/bean/BUser.java&#10;BU&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/src/main/java/acmes/swordfish/advclick/mode/bean/BUser.java&#10;Utils&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/simpleandroid/src/main/java/com/acmes/simpleandroid/utils/Utils.java&#10;ClickM&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/src/main/java/acmes/swordfish/advclick/controler/main/ClickMode.java&#10;string&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/src/main/res/values/strings.xml&#10;Func&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/src/main/java/acmes/swordfish/advclick/controler/function/FunctionFragment.java&#10;Ge&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/src/main/java/acmes/swordfish/advclick/mode/request/GetEarnRequest.java&#10;MainA&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/src/main/java/acmes/swordfish/advclick/controler/main/MainActivityNavigation.java&#10;MainF&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/src/main/java/acmes/swordfish/advclick/controler/main/MainContentFragment.java&#10;LoginMO&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/src/main/java/acmes/swordfish/advclick/controler/login/LoginMode.java&#10;BUS&#9;PSI&#9;JAVA://acmes.swordfish.advclick.mode.bean.BUser&#10;LoginMo&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/src/main/java/acmes/swordfish/advclick/controler/login/LoginMode.java&#10;Regis&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/src/main/java/acmes/swordfish/advclick/controler/login/RegisterActivity.java&#10;Dispat&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/src/main/java/acmes/swordfish/advclick/controler/login/DispatcherActivity.java&#10;Dispa&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/src/main/java/acmes/swordfish/advclick/controler/login/DispatcherActivity.java&#10;API&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/src/main/java/acmes/swordfish/advclick/mode/AdvClickAPI.java&#10;Main&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/src/main/java/acmes/swordfish/advclick/controler/main/MainContentFragment.java&#10;Adv&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/src/main/java/acmes/swordfish/advclick/AdvClickFragment.java&#10;LoginM&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/src/main/java/acmes/swordfish/advclick/controler/login/LoginMode.java&#10;andr&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/src/main/AndroidManifest.xml&#10;Dis&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/src/main/java/acmes/swordfish/advclick/controler/login/DispatcherActivity.java&#10;AdvCli&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/src/main/java/acmes/swordfish/advclick/AdvClickActivity.java&#10;With&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/src/main/java/acmes/swordfish/advclick/controler/withdraw/WithDrawFragment.java&#10;w&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/src/main/res/layout/withdraw_fragment.xml&#10;st&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/src/main/res/values/styles.xml&#10;with&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/src/main/res/layout/withdraw_fragment.xml&#10;stri&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/src/main/res/values/strings.xml&#10;fu&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/src/main/res/layout/function_fragment.xml&#10;prof&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/src/main/res/layout/profile_fragment.xml&#10;func&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/src/main/res/layout/function_fragment.xml&#10;buy&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/src/main/res/layout/buy_fragment.xml&#10;youm&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/src/main/res/layout/youmeng_fragment.xml&#10;Login&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/src/main/res/layout/login_activity.xml&#10;profile&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/src/main/res/layout/profile_fragment.xml&#10;REgis&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/src/main/java/acmes/swordfish/advclick/controler/login/RegisterActivity.java&#10;Functi&#9;PSI&#9;JAVA://acmes.swordfish.advclick.controler.function.FunctionFragment&#10;WithDra&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/src/main/java/acmes/swordfish/advclick/controler/withdraw/WithDrawFragment.java&#10;Register&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/src/main/java/acmes/swordfish/advclick/controler/login/RegisterActivity.java&#10;Retrofi&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/simpleandroid/src/main/java/com/acmes/simpleandroid/imp/Square/RetrofitSimpleResponse.java&#10;Retro&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/simpleandroid/src/main/java/com/acmes/simpleandroid/imp/Square/RetrofitSimpleRequest.java&#10;Ret&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/simpleandroid/src/main/java/com/acmes/simpleandroid/imp/Square/RetrofitSimpleModel.java&#10;Retrofit&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/simpleandroid/src/main/java/com/acmes/simpleandroid/imp/Square/RetrofitSimpleModel.java&#10;Simp&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/simpleandroid/src/main/java/com/acmes/simpleandroid/mvc/model/SimpleModel.java&#10;AcmesRes&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/src/main/java/acmes/swordfish/advclick/mode/response/AcmesResponse.java&#10;LoginA&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/src/main/java/acmes/swordfish/advclick/controler/login/LoginActivity.java&#10;AdvClick&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/src/main/java/acmes/swordfish/advclick/AdvClickActivity.java&#10;LoginRe&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/src/main/java/acmes/swordfish/advclick/mode/request/LoginRequest.java&#10;SimpleReq&#9;PSI&#9;JAVA://com.acmes.simpleandroid.mvc.model.SimpleRequest&#10;AdvMo&#9;FILE&#9;file:///Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/src/main/java/acmes/swordfish/advclick/AdvClickMode.java" />
     <property name="android.project.structure.last.selected" value="app" />
     <property name="android.project.structure.proportion" value="0.15" />
+    <property name="DEBUGGABLE_DEVICE" value="Nexus_6_API_23 [emulator-5554]" />
+    <property name="DEBUGGABLE_PROCESS" value="com.acmes.simpleandroid" />
+    <property name="SHOW_ALL_PROCESSES" value="false" />
+    <property name="DEBUGGER_ID" value="Auto" />
+    <property name="settings.editor.selected.configurable" value="instant.run" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="acmes.swordfish.advclick.controler" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="acmes.swordfish.advclick.view" />
+      <recent name="acmes.swordfish.advclick.mode.bean" />
+      <recent name="acmes.swordfish.advclick.mode.request" />
       <recent name="acmes.swordfish.advclick.controler.main" />
-      <recent name="acmes.swordfish.advclick.controler.function" />
-      <recent name="acmes.swordfish.advclick.controler.youmeng" />
-      <recent name="acmes.swordfish.advclick.controler.buy" />
-      <recent name="acmes.swordfish.advclick.controler.profile" />
+      <recent name="acmes.swordfish.advclick.controler.login" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi" />
       <recent name="$PROJECT_DIR$/app/src/main/res/menu" />
       <recent name="$PROJECT_DIR$/app/src/main/res/layout" />
     </key>
@@ -3416,6 +3523,14 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="false" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" />
+      <option name="HOST" />
+      <option name="PORT" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -3564,35 +3679,42 @@
       <option name="project" value="LOCAL" />
       <updated>1539774563611</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="登陆模块提交">
+      <created>1539855133214</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1539855133214</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1412" height="1119" extended-state="0" />
+    <frame x="0" y="23" width="1920" height="1119" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283433" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3283433" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40697673" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41666666" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934132" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48902196" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31317" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934132" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934132" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17178363" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.47974414" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46307385" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972583" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3992016" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -3606,29 +3728,29 @@
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40697673" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48902196" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3992016" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283433" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283433" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41666666" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934132" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31317" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934132" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934132" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1723301" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48009187" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46307385" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972583" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -3646,51 +3768,35 @@
     <MESSAGE value="First Commit For AdvClick&#10;Powered By SimpleAndroid Java Version" />
     <MESSAGE value="Add ignore" />
     <MESSAGE value="Clean the shit commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Clean the shit commit" />
+    <MESSAGE value="登陆模块提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="登陆模块提交" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
-    <watches-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/mode/bean/BSearch.java</url>
+          <line>21</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="3" />
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Remote">
+        <watch expression="response.getData()" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simpleandroid/build.gradle">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/register_activity.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/withdraw/WithDrawFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/main_bottom_nav_items.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+          <caret line="23" column="43" selection-start-line="0" selection-start-column="0" selection-end-line="117" selection-end-column="47" />
           <folding />
         </state>
       </provider>
@@ -3698,232 +3804,60 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/main_bottom_nav_items_full.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/theme.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/main_activity.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
-          <folding>
-            <element signature="e#702#731#0" expanded="true" />
-            <element signature="e#1120#1148#0" expanded="true" />
-            <element signature="e#1531#1554#0" expanded="true" />
-            <element signature="e#1942#1969#0" expanded="true" />
-            <element signature="e#2356#2383#0" expanded="true" />
-            <element signature="e#2852#2881#0" expanded="true" />
-            <element signature="e#3155#3183#0" expanded="true" />
-            <element signature="e#3441#3464#0" expanded="true" />
-            <element signature="e#3735#3762#0" expanded="true" />
-            <element signature="e#4032#4059#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/mode/request/SearchJavRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/mode/request/SearchRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/mode/response/AcmesListResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/mode/bean/BCategory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/mode/bean/BCollection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/mode/bean/BVideo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/utils/ViewUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/login/LogoutActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/mode/request/LogoutRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+        <state relative-caret-position="57">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/login_activity.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="31" column="55" selection-start-line="31" selection-start-column="55" selection-end-line="31" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/mode/request/RegisterRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="39" column="24" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
-          <folding>
-            <element signature="e#1294#1295#0" expanded="true" />
-            <element signature="e#1335#1336#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/videos/VideoListAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="12" column="59" selection-start-line="12" selection-start-column="59" selection-end-line="12" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/videos/VideosFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="13" column="44" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/login/IAccountManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="29" column="9" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/login/SharedPrefAccountManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/mode/bean/BUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/main/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#856#895#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/main_activity_navigation.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="57" selection-start-line="19" selection-start-column="57" selection-end-line="19" selection-end-column="57" />
-          <folding>
-            <element signature="e#1543#1566#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/main/MainActivityNavigation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="46" column="30" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="30" />
-          <folding>
-            <element signature="e#1957#1994#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simpleandroid/src/main/java/com/acmes/simpleandroid/mvc/SimpleFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <caret line="21" column="51" selection-start-line="0" selection-start-column="0" selection-end-line="103" selection-end-column="47" />
+          <folding>
+            <element signature="e#4177#4206#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/login/LoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="58" column="42" selection-start-line="58" selection-start-column="42" selection-end-line="58" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/youmeng_fragment.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1691">
+          <caret line="89" column="26" selection-start-line="65" selection-start-column="12" selection-end-line="89" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values/values.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="813" column="50" selection-start-line="813" selection-start-column="50" selection-end-line="813" selection-end-column="50" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/profile_fragment.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/buy_fragment.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="1216">
+          <caret line="64" column="33" selection-start-line="64" selection-start-column="33" selection-end-line="64" selection-end-column="33" />
           <folding />
         </state>
       </provider>
@@ -3933,16 +3867,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/profile/ProfileFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        <state relative-caret-position="304">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/register_activity.xml">
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-25/android/widget/Spinner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" column="43" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
+        <state relative-caret-position="-12012">
+          <caret line="66" column="13" selection-start-line="66" selection-start-column="13" selection-end-line="66" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/profile_fragment.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="51" column="35" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
           <folding />
         </state>
       </provider>
@@ -3950,37 +3892,85 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-25/java/lang/Throwable.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="367" column="18" selection-start-line="367" selection-start-column="18" selection-end-line="367" selection-end-column="18" />
-          <folding>
-            <element signature="e#16427#16428#0" expanded="true" />
-            <element signature="e#16463#16464#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="285">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/AdvClickAPI.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
-          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+          <caret line="17" column="71" selection-start-line="17" selection-start-column="71" selection-end-line="17" selection-end-column="71" />
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/spinner_item.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/simpleandroid/src/main/java/com/acmes/simpleandroid/mvc/SimpleActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="774">
-          <caret line="157" column="30" selection-start-line="157" selection-start-column="30" selection-end-line="157" selection-end-column="30" />
+        <state relative-caret-position="532">
+          <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+          <folding>
+            <element signature="e#1496#1497#0" expanded="true" />
+            <element signature="e#1534#1535#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/view/WithDrawSpinner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/AdvClickApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/login/LoginMode.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/mode/request/UploadEarnRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/mode/request/LoginRequest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
-          <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -3988,139 +3978,317 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/AdvClickMode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
-          <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/simpleandroid/src/main/java/com/acmes/simpleandroid/mvc/SimpleViewControllerHelper.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/withdraw_fragment.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="148" column="23" selection-start-line="148" selection-start-column="23" selection-end-line="148" selection-end-column="23" />
+        <state relative-caret-position="2432">
+          <caret line="179" column="68" selection-start-line="179" selection-start-column="41" selection-end-line="179" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Library/Android/sdk/extras/android/m2repository/com/android/support/support-fragment/26.0.0-alpha1/support-fragment-26.0.0-alpha1-sources.jar!/android/support/v4/app/Fragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="1374" column="16" selection-start-line="1374" selection-start-column="16" selection-end-line="1374" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/mode/request/LoginRequest.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/login/SharedPrefAccountManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="460">
+          <caret line="44" column="17" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
+          <folding>
+            <element signature="e#1441#1442#0" expanded="true" />
+            <element signature="e#1476#1477#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/login/RegisterActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="67" column="16" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/login/LogoutActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="603">
+          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/mode/request/AcmesRequest.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/login/AdvClickMode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="12" column="73" selection-start-line="12" selection-start-column="73" selection-end-line="12" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/mode/response/AcmesResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="28" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="28" />
+        <state relative-caret-position="114">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/AdvClickActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="679">
-          <caret line="64" column="16" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/login/LoginActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simpleandroid/src/main/java/com/acmes/simpleandroid/mvc/model/SimpleRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
-          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+          <caret line="64" column="43" selection-start-line="64" selection-start-column="43" selection-end-line="64" selection-end-column="43" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simpleandroid/src/main/java/com/acmes/simpleandroid/mvc/model/SimpleResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simpleandroid/src/main/java/com/acmes/simpleandroid/imp/Square/RetrofitSimpleResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simpleandroid/src/main/java/com/acmes/simpleandroid/imp/Square/RetrofitSimpleRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="17" column="48" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simpleandroid/src/main/java/com/acmes/simpleandroid/imp/Square/RetrofitSimpleModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
-          <folding>
-            <element signature="e#756#757#0" expanded="true" />
-            <element signature="e#783#784#0" expanded="true" />
-            <element signature="e#2459#2725#0" expanded="true" />
-            <element signature="e#2724#2725#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simpleandroid/src/main/java/com/acmes/simpleandroid/mvc/model/SimpleModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="14" column="57" selection-start-line="14" selection-start-column="57" selection-end-line="14" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simpleandroid/src/main/java/com/acmes/simpleandroid/mvc/ISimpleModeCallback.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/login/RegisterActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="70" column="36" selection-start-line="70" selection-start-column="36" selection-end-line="70" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/login/DispatcherActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1463">
-          <caret line="77" column="13" selection-start-line="77" selection-start-column="13" selection-end-line="77" selection-end-column="13" />
+        <state relative-caret-position="375">
+          <caret line="92" column="42" selection-start-line="92" selection-start-column="42" selection-end-line="92" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/login/LoginMode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="44" column="7" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/main/MainActivityNavigation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-513">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/main/MainContentFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="e#397#398#0" expanded="true" />
+            <element signature="e#443#444#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/AdvClickFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1406">
+          <caret line="84" column="5" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
+          <folding>
+            <element signature="e#2601#2602#0" expanded="true" />
+            <element signature="e#2646#2647#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/mode/request/RequestWithDrawRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="e#465#466#0" expanded="true" />
+            <element signature="e#496#497#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/mode/request/GetEarnRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/mode/AdvClickAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="56" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simpleandroid/src/main/java/com/acmes/simpleandroid/mvc/model/SimpleRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="e#1189#1190#0" expanded="true" />
+            <element signature="e#1216#1217#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/withdraw/WithDrawFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="49" column="28" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
+          <folding>
+            <element signature="e#2399#2400#0" expanded="true" />
+            <element signature="e#2444#2445#0" expanded="true" />
+            <element signature="e#3709#3740#0" expanded="true" />
+            <element signature="e#3807#3853#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simpleandroid/src/main/java/com/acmes/simpleandroid/mvc/SimpleFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1619">
+          <caret line="147" column="25" selection-start-line="147" selection-start-column="25" selection-end-line="147" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/main/ClickMode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="38" column="9" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
+          <folding>
+            <element signature="e#877#878#0" expanded="true" />
+            <element signature="e#910#911#0" expanded="true" />
+            <element signature="e#1549#1550#0" expanded="true" />
+            <element signature="e#1604#1605#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-25/java/lang/Math.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="717" column="25" selection-start-line="717" selection-start-column="25" selection-end-line="717" selection-end-column="25" />
+          <folding>
+            <element signature="e#30531#30532#0" expanded="true" />
+            <element signature="e#30596#30597#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simpleandroid/src/main/java/com/acmes/simpleandroid/utils/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="603">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/view/PrimeTrivalTimeTextView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="36" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/controler/function/FunctionFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="111" column="27" selection-start-line="111" selection-start-column="27" selection-end-line="111" selection-end-column="27" />
+          <folding>
+            <element signature="e#1890#3430#0" expanded="true" />
+            <element signature="e#3429#3430#0" expanded="true" />
+            <element signature="e#4095#4131#0" expanded="true" />
+            <element signature="e#4633#4664#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/function_fragment.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1007">
+          <caret line="250" column="49" selection-start-line="250" selection-start-column="49" selection-end-line="250" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/mode/bean/BSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="43" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="43" />
+          <folding>
+            <element signature="e#445#446#0" expanded="true" />
+            <element signature="e#480#481#0" expanded="true" />
+            <element signature="e#516#517#0" expanded="true" />
+            <element signature="e#550#551#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/mode/bean/BEarn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="38" column="42" selection-start-line="38" selection-start-column="42" selection-end-line="38" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/view/TickingTextView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/view/OnlineNumberTextView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="665">
+          <caret line="35" column="29" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#768#769#0" expanded="true" />
+            <element signature="e#810#811#0" expanded="true" />
+            <element signature="e#914#968#0" expanded="true" />
+            <element signature="e#1052#1053#0" expanded="true" />
+            <element signature="e#1075#1076#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/view/PrimeTrialTextView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="37" column="116" selection-start-line="37" selection-start-column="116" selection-end-line="37" selection-end-column="116" />
+          <folding>
+            <element signature="e#758#759#0" expanded="true" />
+            <element signature="e#800#801#0" expanded="true" />
+            <element signature="e#904#961#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/acmes/swordfish/advclick/mode/bean/BUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="86" column="34" selection-start-line="86" selection-start-column="34" selection-end-line="86" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>

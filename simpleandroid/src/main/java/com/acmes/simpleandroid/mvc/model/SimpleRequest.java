@@ -13,7 +13,6 @@ public abstract class SimpleRequest<Response extends SimpleResponse> {
         return false;
     }
 
-
     /**
      * Updating response
      *
@@ -54,6 +53,9 @@ public abstract class SimpleRequest<Response extends SimpleResponse> {
 
     public abstract void buildParams(Object someNetEngineMaybe);
 
+    public boolean isShowProgressBar() {
+        return true;
+    }
 
     /**
      * Getting tag for this request.

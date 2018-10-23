@@ -8,4 +8,23 @@
     <string name="value_tag_buy">buy</string>
     <string name="value_tag_profile">profile</string>
     <string name="value_tag_youmeng">youmeng</string>
+    <string name="format_login_online">在线人数: %s人</string>
+    <string name="format_user_info">%1$s (%2$s)</string>
+    <string name="format_prime_time_left">剩余试用时间: %s</string>
+    <string name="format_yuan">%s 元</string>
+    <string name="format_withdraw_times_left">%s 次</string>
+
+
+    <string-array name="array_withdraw_methods">
+        <item>支付宝</item>
+        <item>财付通</item>
+        <item>微信</item>
+        <item>工商银行</item>
+        <item>农业银行</item>
+        <item>建设银行</item>
+        <item>中国银行</item>
+        <item>招商银行</item>
+        <item>交通银行</item>
+    </string-array>
+
 </resources>

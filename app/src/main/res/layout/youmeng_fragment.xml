@@ -1,13 +1,158 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="YouMeng Fragment" />
+        android:layout_height="match_parent">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-</FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="20dp">
+
+                <TextView
+                    style="@style/textview_primary_big"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="百度联盟:" />
+
+                <EditText
+                    android:id="@+id/baidu_edittext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="150dp"
+                    android:hint="新密码"
+                    android:textColor="@color/textColorPrimary"
+                    android:textColorHint="@color/textColorSecondary" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="20dp">
+
+                <TextView
+                    style="@style/textview_primary_big"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="谷歌联盟:" />
+
+                <EditText
+                    android:id="@+id/google_edittext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="150dp"
+                    android:hint="用户名"
+                    android:textColor="@color/textColorPrimary"
+                    android:textColorHint="@color/textColorSecondary" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="20dp">
+
+                <TextView
+                    style="@style/textview_primary_big"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="搜狗联盟:" />
+
+                <EditText
+                    android:id="@+id/sougou_edittext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="150dp"
+                    android:hint="用户名"
+                    android:textColor="@color/textColorPrimary"
+                    android:textColorHint="@color/textColorSecondary" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="20dp">
+
+                <TextView
+                    style="@style/textview_primary_big"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="淘宝联盟:" />
+
+                <EditText
+                    android:id="@+id/taobao_edittext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="150dp"
+                    android:hint="用户名"
+                    android:textColor="@color/textColorPrimary"
+                    android:textColorHint="@color/textColorSecondary" />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="60dp">
+
+                <Button
+                    android:id="@+id/with_draw_request_button"
+                    style="@style/textview_primary_big"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="检测绑定" />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="20dp">
+
+                <TextView
+                    style="@style/textview_secondary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="正式版用户请帮订好自己的广告联盟，以便正常搜索广告"
+                    android:textColor="@color/colorPrimaryDark" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</android.support.v4.widget.SwipeRefreshLayout>

@@ -1,5 +1,7 @@
 package acmes.swordfish.advclick;
 
+import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.util.Log;
 import android.view.View;
@@ -14,11 +16,18 @@ import com.acmes.simpleandroid.mvc.model.SimpleResponse;
  * Created by fishyu on 2018/2/26.
  */
 
-public class AdvClickFragment<T extends AdvClickMode> extends SimpleFragment<T> {
+public class AdvClickFragment<T extends AdvClickMode> extends SimpleFragment<T> implements SwipeRefreshLayout.OnRefreshListener {
 
     static final SwipeRefreshLayout EMPTY = new SwipeRefreshLayout(AdvClickApplication.getInstance());
 
     private SwipeRefreshLayout mSwipeRefreshLayout = null;
+
+    @Override
+    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        initSwipeRefreshLayout();
+
+    }
 
     private void initSwipeRefreshLayout() {
         if (mSwipeRefreshLayout == null) {
@@ -33,6 +42,7 @@ public class AdvClickFragment<T extends AdvClickMode> extends SimpleFragment<T> 
 
             if (view instanceof SwipeRefreshLayout) {
                 mSwipeRefreshLayout = (SwipeRefreshLayout) view;
+                mSwipeRefreshLayout.setOnRefreshListener(this);
             } else {
                 Log.e(TAG, "Find no SwipeRefreshLayout !");
                 mSwipeRefreshLayout = EMPTY;
@@ -50,10 +60,13 @@ public class AdvClickFragment<T extends AdvClickMode> extends SimpleFragment<T> 
         return mSwipeRefreshLayout;
     }
 
+
     @Override
     public void onRequestStart(SimpleRequest request) {
         super.onRequestStart(request);
-        getSwipeRefreshLayout().setRefreshing(true);
+        if (request.isShowProgressBar()) {
+            getSwipeRefreshLayout().setRefreshing(true);
+        }
     }
 
     @Override
@@ -61,8 +74,9 @@ public class AdvClickFragment<T extends AdvClickMode> extends SimpleFragment<T> 
         super.onFailure(request, exception);
         Log.e(TAG, exception.getMessage());
         Toast.makeText(SimpleApplication.getInstance(), exception.getMessage(), Toast.LENGTH_SHORT).show();
-
-        getSwipeRefreshLayout().setRefreshing(false);
+        if (request.isShowProgressBar()) {
+            getSwipeRefreshLayout().setRefreshing(false);
+        }
     }
 
     @Override
@@ -73,9 +87,18 @@ public class AdvClickFragment<T extends AdvClickMode> extends SimpleFragment<T> 
     @Override
     public void onResponse(SimpleRequest request, SimpleResponse response) {
         super.onResponse(request, response);
-
-        getSwipeRefreshLayout().setRefreshing(false);
+        if (request.isShowProgressBar()) {
+            getSwipeRefreshLayout().setRefreshing(false);
+        }
     }
 
-
+    @Override
+    public void onRefresh() {
+        getHandler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                mSwipeRefreshLayout.setRefreshing(false);
+            }
+        }, 1000);
+    }
 }

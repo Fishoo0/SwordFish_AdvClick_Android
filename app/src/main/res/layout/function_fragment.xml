@@ -1,13 +1,283 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="Function Fragment" />
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
 
-</FrameLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="20dp">
+
+                <TextView
+                    style="@style/textview_primary_big"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="网络选择:" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/fourg"
+                            style="@style/textview_secondary_big"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:text="4G网络" />
+
+                        <RadioButton
+                            android:id="@+id/wifi"
+                            style="@style/textview_secondary_big"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="WIFI网络" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/auto_choose"
+                            style="@style/textview_secondary_big"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="自动选择" />
+
+                        <RadioButton
+                            android:id="@+id/hotpoint"
+                            style="@style/textview_secondary_big"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="热点网络" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="20dp"
+                android:visibility="visible">
+
+                <TextView
+                    style="@style/textview_primary_big"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="查询结果:" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="20dp">
+
+                    <EditText
+                        android:id="@+id/search_response"
+                        style="@style/textview_secondary"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:editable="false"
+                        android:gravity="start"
+                        android:text="开始搜索广告"
+                        android:textColor="@color/textColorPrimary" />
+                </FrameLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="10dp">
+
+                    <Button
+                        android:id="@+id/start_search_button"
+                        style="@style/textview_primary_big"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:text="开始点击" />
+
+                    <Button
+                        android:id="@+id/start_click_button"
+                        style="@style/textview_primary_big"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:text="开始搜索" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="20dp">
+
+                <TextView
+                    style="@style/textview_primary_big"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="收入管理:" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="0dp">
+
+
+                    <acmes.swordfish.advclick.view.OnlineNumberTextView
+                        android:id="@+id/online_number"
+                        style="@style/textview_secondary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="30dp"
+                        android:text="@string/format_login_online"
+                        android:textColor="@color/colorPrimaryDark" />
+
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="40dp"
+                        android:paddingTop="20dp">
+
+                        <TextView
+                            style="@style/textview_primary"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="本次累计收入:" />
+
+                        <TextView
+                            android:id="@+id/earn_count_textview"
+                            style="@style/textview_secondary"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginLeft="150dp"
+                            android:text="10元" />
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="40dp"
+                        android:paddingTop="20dp">
+
+                        <TextView
+                            style="@style/textview_primary"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="账户可用余额:" />
+
+                        <TextView
+                            android:id="@+id/earn_total_count_textview"
+                            style="@style/textview_secondary"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginLeft="150dp"
+                            android:text="100元" />
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="40dp"
+                        android:paddingTop="20dp">
+
+                        <TextView
+                            style="@style/textview_primary"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="用户名:" />
+
+                        <TextView
+                            android:id="@+id/user_info_textview"
+                            style="@style/textview_secondary"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginLeft="150dp"
+                            android:text="@string/format_user_info" />
+
+                    </FrameLayout>
+
+                    <acmes.swordfish.advclick.view.PrimeTrialTextView
+                        android:id="@+id/prime_try_time_left_textview"
+                        style="@style/textview_secondary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:paddingTop="20dp"
+                        android:text="@string/format_prime_time_left"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</android.support.v4.widget.SwipeRefreshLayout>

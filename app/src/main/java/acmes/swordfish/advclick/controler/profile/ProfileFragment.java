@@ -27,7 +27,7 @@ public class ProfileFragment extends MainContentFragment implements View.OnClick
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         // set listeners
-        view.findViewById(R.id.logout).setOnClickListener(this);
+//        view.findViewById(R.id.logout).setOnClickListener(this);
     }
 
     @Override

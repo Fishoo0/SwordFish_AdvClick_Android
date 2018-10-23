@@ -1,6 +1,6 @@
 package acmes.swordfish.advclick.mode.request;
 
-import acmes.swordfish.advclick.AdvClickAPI;
+import acmes.swordfish.advclick.mode.AdvClickAPI;
 
 import io.reactivex.Observable;
 

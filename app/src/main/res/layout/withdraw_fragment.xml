@@ -1,13 +1,225 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="WithDraw Fragment" />
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingTop="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/adv_alipay_logo" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="20dp">
+
+                <TextView
+                    style="@style/textview_primary_big"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="提现方式:" />
+
+                <acmes.swordfish.advclick.view.WithDrawSpinner
+                    android:id="@+id/spinner"
+                    style="@style/MySpinnerLook"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="150dp"
+                    android:entries="@array/array_withdraw_methods" />
 
 
-</FrameLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="20dp">
+
+                <TextView
+                    style="@style/textview_primary_big"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="支付宝账户:" />
+
+                <TextView
+                    android:id="@+id/alipay"
+                    style="@style/textview_secondary_big"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="150dp"
+                    android:text="AcmeS"
+
+                    />
+
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="20dp">
+
+                <TextView
+                    style="@style/textview_primary_big"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="支付宝姓名:" />
+
+
+                <TextView
+                    android:id="@+id/alipay_name"
+                    style="@style/textview_secondary_big"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="150dp"
+                    android:text="AcmeS Name" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="20dp">
+
+                <TextView
+                    style="@style/textview_primary_big"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="可用余额:" />
+
+
+                <TextView
+                    android:id="@+id/earn_count"
+                    style="@style/textview_secondary_big"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="150dp"
+                    android:text="100.00" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="20dp">
+
+                <TextView
+                    style="@style/textview_primary_big"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="今日剩余提现次数:" />
+
+
+                <TextView
+                    android:id="@+id/with_draw_times"
+                    style="@style/textview_secondary_big"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="150dp"
+                    android:text="1" />
+
+            </FrameLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="20dp">
+
+                <TextView
+                    style="@style/textview_primary_big"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="查询结果:" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="20dp">
+
+                    <TextView
+                        android:id="@+id/with_draw_response_textview"
+                        style="@style/textview_secondary"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="start"
+                        android:text="2018-10-20 已处理"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="20dp">
+
+                <Button
+                    android:id="@+id/with_draw_request_button"
+                    style="@style/textview_primary_big"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:text="申请提现" />
+
+                <Button
+                    android:id="@+id/with_draw_response_button"
+                    style="@style/textview_primary_big"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:text="查询结果" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</android.support.v4.widget.SwipeRefreshLayout>

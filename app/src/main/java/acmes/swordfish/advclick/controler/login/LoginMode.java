@@ -63,9 +63,8 @@ public class LoginMode extends AdvClickMode {
         // do it first
         if (response.isSuccess() && response.getData() != null) {
             if (request instanceof LoginRequest && response.getData() instanceof BUser) {
-                BUser user = new BUser(((LoginRequest) request).name, ((LoginRequest) request).password);
                 if (!TextUtils.isEmpty(((LoginRequest) request).password)) {
-                    mAccountManager.addUser(user);
+                    mAccountManager.addUser((BUser) response.getData());
                 }
             } else if (request instanceof RegisterRequest && response.getData() instanceof BUser) {
                 //do nothing

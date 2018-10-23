@@ -13,23 +13,32 @@ import com.acmes.simpleandroid.mvc.model.SimpleResponse;
  * Created by fishyu on 2018/1/2.
  */
 
-public class AdvClickActivity<T extends AdvClickMode> extends SimpleActivity<T> {
+public class AdvClickActivity<T extends AdvClickMode> extends SimpleActivity<T> implements SwipeRefreshLayout.OnRefreshListener {
 
     static final SwipeRefreshLayout EMPTY = new SwipeRefreshLayout(AdvClickApplication.getInstance());
 
     private SwipeRefreshLayout mSwipeRefreshLayout;
+
+
+    @Override
+    protected void onContentViewCreated() {
+        super.onContentViewCreated();
+        initSwipeRefreshLayout();
+    }
 
     private void initSwipeRefreshLayout() {
         if (mSwipeRefreshLayout == null) {
             View view = findViewById(R.id.swipe_refresh_layout);
             if (view instanceof SwipeRefreshLayout) {
                 mSwipeRefreshLayout = (SwipeRefreshLayout) view;
+                mSwipeRefreshLayout.setOnRefreshListener(this);
             } else {
                 Log.e(TAG, "Find no SwipeRefreshLayout !");
                 mSwipeRefreshLayout = EMPTY;
             }
         }
     }
+
 
     /**
      * Getting swipe refresh layout
@@ -50,6 +59,9 @@ public class AdvClickActivity<T extends AdvClickMode> extends SimpleActivity<T> 
     @Override
     public void onFailure(SimpleRequest request, Throwable exception) {
         super.onFailure(request, exception);
+        if (exception == null) {
+            exception = new Exception("Unknown Error !");
+        }
         Log.e(TAG, exception.getMessage());
         Toast.makeText(this, exception.getMessage(), Toast.LENGTH_LONG).show();
 
@@ -66,6 +78,16 @@ public class AdvClickActivity<T extends AdvClickMode> extends SimpleActivity<T> 
         super.onResponse(request, response);
 
         getSwipeRefreshLayout().setRefreshing(false);
+    }
+
+    @Override
+    public void onRefresh() {
+        getHandler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                mSwipeRefreshLayout.setRefreshing(false);
+            }
+        }, 1000);
     }
 
 }

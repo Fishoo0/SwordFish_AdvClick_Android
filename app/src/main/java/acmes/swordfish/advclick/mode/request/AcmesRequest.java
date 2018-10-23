@@ -1,6 +1,6 @@
 package acmes.swordfish.advclick.mode.request;
 
-import acmes.swordfish.advclick.AdvClickAPI;
+import acmes.swordfish.advclick.mode.AdvClickAPI;
 import acmes.swordfish.advclick.mode.response.AcmesResponse;
 import com.acmes.simpleandroid.imp.Square.RetrofitSimpleRequest;
 

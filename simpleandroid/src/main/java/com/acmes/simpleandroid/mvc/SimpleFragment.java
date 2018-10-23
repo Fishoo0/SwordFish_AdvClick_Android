@@ -47,11 +47,19 @@ public abstract class SimpleFragment<T extends SimpleModel> extends Fragment imp
         return view;
     }
 
+
+    @Override
+    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        Log.v(TAG, "onViewCreated");
+        ButterKnife.bind(this, getView());
+    }
+
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         Log.v(TAG, "onActivityCreated");
-        ButterKnife.bind(this, getView());
+
     }
 
     @Override

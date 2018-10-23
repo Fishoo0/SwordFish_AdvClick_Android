@@ -2,22 +2,436 @@
 <items version="2" >
 
     <item
-        is-multidex="true"
-        jar="/Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/Users/fishyu/.android/build-cache/33b643b03713b12fef9a18be0ea5e81031c7036d/output/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.0"
-        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="/Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_b8f0e9f503967b97ba8be45890776a951ca2d222/classes.dex" />
+        sha1="ace69012558dde2984bc67a43c5e45736282dc38">
+        <dex dex="/Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/build/intermediates/pre-dexed/debug/classes_2783b8f80df4362a1a3a5e5155c65f787fc4e65f.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/Users/fishyu/.gradle/caches/modules-2/files-2.1/org.reactivestreams/reactive-streams/1.0.2/323964c36556eb0e6209f65c1cef72b53b461ab8/reactive-streams-1.0.2.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.0"
-        sha1="0fe68d0854bff672c7c8f502dfb87bdd74da358a">
-        <dex dex="/Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_564620fe1881ebc85054a88f81e465cc2ad1a1b5/classes.dex" />
+        sha1="323964c36556eb0e6209f65c1cef72b53b461ab8">
+        <dex dex="/Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/build/intermediates/pre-dexed/debug/reactive-streams-1.0.2_0e2eb024a21845dd21043240bac8ce6b8e5478a6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/fishyu/.android/build-cache/17952fea4262cae7fca0fda0057c15537a440b7d/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="996cad0b77bfad8bb93a5b09ebb2bb36e9660177">
+        <dex dex="/Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/build/intermediates/pre-dexed/debug/classes_a161f9daecfed78e26151c2724a239d2092dae2a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/fishyu/.android/build-cache/477e11137349a249773ca66d32a922c7e0f16f87/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1e90b641e3b5c9e9c63dc0b320d8dc1fe649bc9f">
+        <dex dex="/Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/build/intermediates/pre-dexed/debug/classes_c3525fb8104a609c4ee9f22f9ce77873f33fb7d2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/fishyu/.android/build-cache/39f2c8beb45cdf01c6f2bf555a4ffdaa042ce027/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c4f45092eee6cdf1a5dbd597b2b6819be652ce2e">
+        <dex dex="/Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/build/intermediates/pre-dexed/debug/classes_0f17c45060d8afb4341f99b8c76f4ea3efe37179.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/fishyu/.android/build-cache/8818903c9ab3b5790bbae715ce4ac7361997c650/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="37d3f9a065d98926697160993997927884e630f2">
+        <dex dex="/Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/build/intermediates/pre-dexed/debug/classes_a40ea1877efc22c6a1e605440478d49b3967e098.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/fishyu/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.5/f645ed69d595b24d4cf8b3fbb64cc505bede8829/gson-2.8.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f645ed69d595b24d4cf8b3fbb64cc505bede8829">
+        <dex dex="/Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/build/intermediates/pre-dexed/debug/gson-2.8.5_f853c952ab08f9cfb9fb54fb636e1f160af5f867.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/fishyu/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/build/intermediates/pre-dexed/debug/picasso-2.5.2_dc689096174738182de97a0936e8cf073937f504.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/fishyu/.gradle/caches/modules-2/files-2.1/nl.qbusict/cupboard/2.2.0/dc6f78fc951c5bdeec92c14c6dd6adc9ce6195d0/cupboard-2.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="dc6f78fc951c5bdeec92c14c6dd6adc9ce6195d0">
+        <dex dex="/Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/build/intermediates/pre-dexed/debug/cupboard-2.2.0_1b278a964acd840a04428a7aa2e59264a847031f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/fishyu/.gradle/caches/modules-2/files-2.1/com.squareup.haha/haha/2.0.3/640a438d2d415c056ca6a673ac26b183b044e160/haha-2.0.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="640a438d2d415c056ca6a673ac26b183b044e160">
+        <dex dex="/Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/build/intermediates/pre-dexed/debug/haha-2.0.3_5e56e10bdb31807737f22a5b40dc4f0e65b3c7c0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/fishyu/.android/build-cache/4e96b7866d53d688f8917a686a2d0c27f008079f/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2cce451e639f1d9ab643786fd303038f7546835a">
+        <dex dex="/Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/build/intermediates/pre-dexed/debug/classes_46ca26b57fdeb85dc2044d6a74ee0ecc9544ce96.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/fishyu/.android/build-cache/f6c09e58565a69ca71b0d1c260c1113e1ed1765c/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9935891f23923f39d002087085d9696568a9f657">
+        <dex dex="/Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/build/intermediates/pre-dexed/debug/classes_cbc0709d89a5fb54bdc305d857a79985873817b5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/fishyu/.android/build-cache/8a4378888022698648ba7d740a9adfe96963a3ca/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="47471eb19df288158b00b8d9cfa41bce7373f5cc">
+        <dex dex="/Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/build/intermediates/pre-dexed/debug/classes_bf9394ac77ec6175693c46d19092eec24de59b0c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/fishyu/.android/build-cache/a61cc4f45496d54923c8201b48333e323ec6e009/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="15f5c92222434eda96a7b12c839314dc756a472d">
+        <dex dex="/Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/build/intermediates/pre-dexed/debug/classes_324c07d63a5f16989b396090db26f2013940e0f2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/fishyu/.android/build-cache/88a90ae24f5c54028be2903221cf582f750b644e/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="cddcd0fb93bc70e27325f2f715b2710332004ebb">
+        <dex dex="/Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/build/intermediates/pre-dexed/debug/classes_ac4541f1f0c581b1a54d725987312ecc4b4fbea8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/fishyu/.android/build-cache/2702bb01ab2e9151b59aa418f9f48547488b7b3a/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="14889e022db94047ceadff1cf5e7984139a4eb8e">
+        <dex dex="/Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/build/intermediates/pre-dexed/debug/classes_c27f76a6103af5de2cb11d90b9e71cefd7ae866d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/fishyu/.android/build-cache/c82419bc3f1cca6e6efdd7697cfed6c3a938cc34/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6a2bcb61342d09fe9acf55c9daf63961c8866cc0">
+        <dex dex="/Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/build/intermediates/pre-dexed/debug/classes_1ca53bb765fa2073f51c6c417f2d48b02a11c626.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/fishyu/.gradle/caches/modules-2/files-2.1/org.aspectj/aspectjrt/1.8.5/39a8ff2d1f79267907f5573c090b342b040b9682/aspectjrt-1.8.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="39a8ff2d1f79267907f5573c090b342b040b9682">
+        <dex dex="/Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/build/intermediates/pre-dexed/debug/aspectjrt-1.8.5_f65dca7abeb59c5daa189524879c5805ac21ddf4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/fishyu/.android/build-cache/bd1b1685069e51c5958104ea7e18f505322c1bd1/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6a022bf00ccd0948a8180c505e8e458bbddd43a6">
+        <dex dex="/Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/build/intermediates/pre-dexed/debug/classes_93b316cc86a08c9ab22711bb7669540984bd2950.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/fishyu/.gradle/caches/modules-2/files-2.1/com.squareup.leakcanary/leakcanary-watcher/1.5.4/5e3dadce30fd748563219945d867a2e96f287931/leakcanary-watcher-1.5.4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5e3dadce30fd748563219945d867a2e96f287931">
+        <dex dex="/Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/build/intermediates/pre-dexed/debug/leakcanary-watcher-1.5.4_131678a7333cc04a5ddd5cf46fcda24295dc9938.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/fishyu/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="/Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/build/intermediates/pre-dexed/debug/javax.inject-1_c174adae51016ab7451d88ea4f1457688ccaa5de.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/fishyu/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife-annotations/8.8.1/bc373fb6bc7bca3035041b924f158fd2b946ee8d/butterknife-annotations-8.8.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="bc373fb6bc7bca3035041b924f158fd2b946ee8d">
+        <dex dex="/Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/build/intermediates/pre-dexed/debug/butterknife-annotations-8.8.1_cd2e9aace6bfa3a1c91e4add32d5aa93770a8264.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/fishyu/.gradle/caches/modules-2/files-2.1/com.jakewharton.picasso/picasso2-okhttp3-downloader/1.1.0/f4f77eb62269c977c154765cd01587eda6488273/picasso2-okhttp3-downloader-1.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f4f77eb62269c977c154765cd01587eda6488273">
+        <dex dex="/Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/build/intermediates/pre-dexed/debug/picasso2-okhttp3-downloader-1.1.0_37b6c9b5a0266ba97b148e4a48cae2a3b5cca04e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/fishyu/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.4.0/15d7790ee311d961379c51b00aba12d5967cb7ea/converter-gson-2.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="15d7790ee311d961379c51b00aba12d5967cb7ea">
+        <dex dex="/Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/build/intermediates/pre-dexed/debug/converter-gson-2.4.0_e583be8ed4416dda8581a14e14235ee5c0fca549.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/simpleandroid/build/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5ece3b8895ff632cc931bef914c72aa510422a3f">
+        <dex dex="/Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/build/intermediates/pre-dexed/debug/classes_0191cce6d00127ec83c9e62a985bf220a5441b2d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/fishyu/.android/build-cache/5e3655cdd5e5f6380f997e4d4a561aefd6d3f796/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="/Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/build/intermediates/pre-dexed/debug/classes_73d1e82485845dad69381192b3b32602311b4dc0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/fishyu/.gradle/caches/modules-2/files-2.1/com.jakewharton.hugo/hugo-annotations/1.2.1/b01150795c5cdca1eb7e501bf00f105ff0e31501/hugo-annotations-1.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b01150795c5cdca1eb7e501bf00f105ff0e31501">
+        <dex dex="/Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/build/intermediates/pre-dexed/debug/hugo-annotations-1.2.1_fe768c557a1b85725f5b024d13e63e0bd6dca650.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/fishyu/.android/build-cache/624d0eea1cf572738e7d61cc964a9db25c392034/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="fcd01fd11233459f546c437ec927e9b61bf7caf1">
+        <dex dex="/Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/build/intermediates/pre-dexed/debug/classes_86a9c8325ca5f4437fd8dbae8159971816b3f637.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/fishyu/.android/build-cache/869daf9f4bd790a66b070d4b97267534313a6c54/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8df0e365e40beb151bc42dee20817721a6cab7b0">
+        <dex dex="/Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/build/intermediates/pre-dexed/debug/classes_7ff6f9e9dfadfff62e373581a9262549a84db047.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/fishyu/.android/build-cache/f67bd9796f48a07bfc5a4c30ce42b614b52b92a8/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="952944218ecedea1554a513dec0c14d570642843">
+        <dex dex="/Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/build/intermediates/pre-dexed/debug/classes_6906b2d9ef5300f6a0e7584b52df6cef18753f69.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/fishyu/.gradle/caches/modules-2/files-2.1/com.google.dagger/dagger/2.17/25e4130ca54cb143c58f707ecfd3f6936f39592f/dagger-2.17.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="25e4130ca54cb143c58f707ecfd3f6936f39592f">
+        <dex dex="/Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/build/intermediates/pre-dexed/debug/dagger-2.17_e97fcae55930037ff7ca04dd8849069ad4958871.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/fishyu/.android/build-cache/76827fb9f6c623afdfe065cd021f01e7e59d860a/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/build/intermediates/pre-dexed/debug/classes_e931e927f779ea267bcf5decb1eb96a42ff48774.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/fishyu/.android/build-cache/ac115a5b3276e2c29815ae58ab5839c4517ce29f/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e176fd06c2ad5b50a2f5cb4de6000a83a7cb48f5">
+        <dex dex="/Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/build/intermediates/pre-dexed/debug/classes_f4474bd09affb9d6bce1eae9dca1cf75f399e839.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/fishyu/Library/Android/sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/constraint-layout-solver-1.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="/Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/build/intermediates/pre-dexed/debug/constraint-layout-solver-1.0.2_86abc8a3b84ff2f485a36caa26d29d7b316ac6b3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/fishyu/.android/build-cache/60106e168af5a71ff3d19dc5e45385e1027769b6/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2e92aa0163544a804a0b34f169ca61801770839a">
+        <dex dex="/Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/build/intermediates/pre-dexed/debug/classes_908fd49c116a79ca3f813ee592941e3feb655667.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/fishyu/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/26.0.0-alpha1/support-annotations-26.0.0-alpha1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="023ee503b631f69511e335a061ea008f8da60f40">
+        <dex dex="/Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/build/intermediates/pre-dexed/debug/support-annotations-26.0.0-alpha1_5578d5a1ff4fe86aad2fae563741e43bcb9b0abe.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/fishyu/.android/build-cache/03e97e27fc270f8f3c2e1a47caab0ed7026cfd39/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="18d31838aa4fcc768a8a0516e22cc13b94655d89">
+        <dex dex="/Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/build/intermediates/pre-dexed/debug/classes_1d3570519bb7546e817809151b1e22056ea08cb2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/fishyu/.android/build-cache/37381c307f27a93fede8f7732cb105654ea049ad/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2bac9385ea008561a30419c09e9230a8681b3e09">
+        <dex dex="/Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/build/intermediates/pre-dexed/debug/classes_f8ce87373e486aa916388fcbfeed0098d0d434ba.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/fishyu/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/adapter-rxjava2/2.4.0/9286ea8ac29dc3822cca03291259db825e118506/adapter-rxjava2-2.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9286ea8ac29dc3822cca03291259db825e118506">
+        <dex dex="/Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/build/intermediates/pre-dexed/debug/adapter-rxjava2-2.4.0_b87ed53a1d1ff97cbef857b40d328a9d0f0ff3d7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/fishyu/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/logging-interceptor/3.11.0/f24576b8fd39d34149654df9702f070042083b65/logging-interceptor-3.11.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f24576b8fd39d34149654df9702f070042083b65">
+        <dex dex="/Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/build/intermediates/pre-dexed/debug/logging-interceptor-3.11.0_af6422fa4f627fab042658dcc6079bf733ca8e29.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/fishyu/.android/build-cache/be17a4b04f83f1ad4583e41ac8ebbf4d498d78a2/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6d5b27636fc7090afd3d015bc86f802b050c946c">
+        <dex dex="/Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/build/intermediates/pre-dexed/debug/classes_f8494a0bb4edbe0755b4b904f3e087de79b01bd0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/fishyu/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.11.0/75966e05a49046ca2ae734e5626f28837a8d1e82/okhttp-3.11.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="75966e05a49046ca2ae734e5626f28837a8d1e82">
+        <dex dex="/Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/build/intermediates/pre-dexed/debug/okhttp-3.11.0_ccdbc40dd2caa53ff8049c67088ef11802acf625.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/fishyu/.android/build-cache/31297d999c29fddf6e2f44ecd8047ec49b49f3db/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="88246166d5afb106f532f6e6deae683c66b42c89">
+        <dex dex="/Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/build/intermediates/pre-dexed/debug/classes_4483a4bacf7ab4d84e539e9b3918ee53570c21b2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/fishyu/.android/build-cache/9f3dc5b51e07c06cb3e8a9dc440492cf1fad06b7/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c303cd985b36079044f1533d8d7d0e48e3978024">
+        <dex dex="/Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/build/intermediates/pre-dexed/debug/classes_6c06f0571d11d3414bd7220f42c3562dda0cb8f2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/fishyu/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.14.0/102d7be47241d781ef95f1581d414b0943053130/okio-1.14.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="102d7be47241d781ef95f1581d414b0943053130">
+        <dex dex="/Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/build/intermediates/pre-dexed/debug/okio-1.14.0_8bbe0d4a75a9625b56c10a6a19d26f102ee76f9b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/fishyu/.android/build-cache/59573db44dabd32a3048cad52d48dae06c0972dc/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e70a3fed299d84cd868614e11021664d72b8e488">
+        <dex dex="/Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/build/intermediates/pre-dexed/debug/classes_d68643490bb3a885138a9c0e2c20af7038ebace6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/fishyu/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.2.2/db2277cb0641bd8bd2f491fab555d37345351d6/rxjava-2.2.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0db2277cb0641bd8bd2f491fab555d37345351d6">
+        <dex dex="/Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/build/intermediates/pre-dexed/debug/rxjava-2.2.2_d36bfdb8f9d74f875c2898d140bfa673dd298a08.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/fishyu/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.4.0/fc4aa382632bfaa7be7b41579efba41d5a71ecf3/retrofit-2.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="fc4aa382632bfaa7be7b41579efba41d5a71ecf3">
+        <dex dex="/Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/build/intermediates/pre-dexed/debug/retrofit-2.4.0_1d1f72b3ffe70f80c28b896e941a4a42f4474858.jar" />
     </item>
 
 </items>

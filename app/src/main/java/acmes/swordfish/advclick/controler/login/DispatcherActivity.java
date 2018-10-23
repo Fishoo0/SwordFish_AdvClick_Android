@@ -93,7 +93,7 @@ public class DispatcherActivity extends AdvClickActivity<LoginMode> {
             if (!(response.isSuccess())) {
                 Log.e(TAG, "\t login failed, jump to this for further processing");
                 Toast.makeText(this, response.getMessage(), Toast.LENGTH_SHORT).show();
-                LoginActivity.jumpToThis(this, null);
+                DispatcherActivity.jumpToThis(this, CMD_LOGOUT);
             } else {
                 // Login successfully
             }

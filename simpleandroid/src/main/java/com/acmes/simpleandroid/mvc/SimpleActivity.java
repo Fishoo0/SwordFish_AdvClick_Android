@@ -33,18 +33,22 @@ public abstract class SimpleActivity<T extends SimpleModel> extends AppCompatAct
     @Override
     public void setContentView(@LayoutRes int layoutResID) {
         super.setContentView(layoutResID);
-        ButterKnife.bind(this);
+        onContentViewCreated();
     }
 
     @Override
     public void setContentView(View view) {
         super.setContentView(view);
-        ButterKnife.bind(this);
+        onContentViewCreated();
     }
 
     @Override
     public void setContentView(View view, ViewGroup.LayoutParams params) {
         super.setContentView(view, params);
+        onContentViewCreated();
+    }
+
+    protected void onContentViewCreated() {
         ButterKnife.bind(this);
     }
 

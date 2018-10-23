@@ -55,4 +55,7 @@ public class Utils {
         Toast.makeText(SimpleApplication.getInstance(), message, Toast.LENGTH_SHORT).show();
     }
 
+
+
+
 }
