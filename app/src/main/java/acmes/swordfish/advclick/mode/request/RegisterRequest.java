@@ -10,7 +10,7 @@ import io.reactivex.Observable;
  * time text not null,
  * <p>
  * name text not null,
- * password text not null,
+ * baidu text not null,
  * token text,
  * <p>
  * cover text,

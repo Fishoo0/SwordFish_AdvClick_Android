@@ -4,6 +4,9 @@ import com.google.gson.annotations.SerializedName;
 
 import java.io.Serializable;
 
+import acmes.swordfish.advclick.AdvClickApplication;
+import acmes.swordfish.advclick.R;
+
 /**
  * Created by fishyu on 2018/1/2.
  */
@@ -31,14 +34,29 @@ public class BUser implements Serializable {
     @SerializedName("about")
     public String mAbout;
 
+    @SerializedName("is_admin")
+    public int mIsAdmin;
+
     @SerializedName("im_qq")
     public String mQQ;
+
+    @SerializedName("telephone")
+    public String mTelephone = "";
 
     @SerializedName("alipay")
     public String mAlipay;
 
     @SerializedName("alipay_name")
     public String mAlipayName;
+
+
+    public static final int PRIME_NORMAL = 0;
+
+    public static final int PRIME_TRY = 1;
+
+    public static final int PRIME = 2;
+
+    public static final int PRIME_FORBIDDEN = 3;
 
 
     /**
@@ -55,11 +73,30 @@ public class BUser implements Serializable {
     @SerializedName("prime_level")
     public int mPrimeLevel;
 
+    /**
+     * In seconds
+     */
     @SerializedName("prime_open_time")
     public long mPrimeOpenTime;
 
+    /**
+     * In seconds
+     */
     @SerializedName("prime_end_time")
     public long mPrimeEndTime;
+
+    @SerializedName("server_time")
+    public long mServerTime;
+
+    @SerializedName("youmeng_checked")
+    public int mYoumengChecked;
+
+    public long mLocalTimeSeconds;
+
+
+    public BUser() {
+        mLocalTimeSeconds = System.currentTimeMillis() / 1000;
+    }
 
     public BUser(String user_name, String user_password) {
         mUserName = user_name;
@@ -68,35 +105,59 @@ public class BUser implements Serializable {
 
     public BEarn mEarn;
 
-    public static final String getPrimeString(int primeLevel) {
-        switch (primeLevel) {
-            case 1:
-                return "普通会员";
-            case 2:
-                return "试用会员";
-            case 3:
-                return "正式版会员";
-            case 4:
-            default:
-                return "禁止登陆";
+    public final String getPrimeString() {
+        String[] values = AdvClickApplication.getInstance().getResources().getStringArray(R.array.prime_level);
+        if (mPrimeLevel < PRIME_NORMAL || mPrimeLevel > PRIME_FORBIDDEN) {
+            return values[PRIME_FORBIDDEN];
+        } else {
+            return values[mPrimeLevel];
         }
     }
-
-    public long getEndTime() {
-//        return mPrimeEndTime;
-        if (mPrimeOpenTime == 0) {
-            mPrimeOpenTime = System.currentTimeMillis() + 30 * 1000;
-        }
-        return mPrimeOpenTime;
-    }
-
 
     public final long getPrimeTimeLeft() {
-        long second = (getEndTime() - System.currentTimeMillis()) / 1000;
-        if (second < 0) {
-            return 0;
+        long serverTimeCurrent = (System.currentTimeMillis() / 1000) + (mServerTime - mLocalTimeSeconds);
+        long left = mPrimeEndTime - serverTimeCurrent;
+        if (left < 0) {
+            left = 0;
         }
-        return second;
+        return left;
+    }
+
+    public String getPrimeTimeLeftString() {
+        return getPrimeTimeLeft() + "秒";
+    }
+
+
+    public boolean isAdmin() {
+        return mIsAdmin > 0;
+    }
+
+    /**
+     * 只有正式版会员才显示 youmeng
+     *
+     * @return
+     */
+    public boolean showYoumeng() {
+        return mPrimeLevel == PRIME;
+    }
+
+
+    public boolean isYoumengChecked() {
+        return mYoumengChecked > 0;
+    }
+
+
+    public boolean isFullFunction() {
+        if (mPrimeLevel == PRIME) {
+            if (isYoumengChecked()) {
+                return true;
+            }
+        } else if (mPrimeLevel == PRIME_TRY) {
+            if (getPrimeTimeLeft() > 0) {
+                return true;
+            }
+        }
+        return false;
     }
 
 

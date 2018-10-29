@@ -1,0 +1,161 @@
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipe_refresh_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="20dp">
+
+                <TextView
+                    style="@style/textview_primary_big"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="总金额：" />
+
+
+                <EditText
+                    android:id="@+id/earn_amoumt"
+                    style="@style/textview_secondary_big"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="150dp"
+                    android:hint="0.0"
+                    android:singleLine="true" />
+
+
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="20dp">
+
+                <TextView
+                    style="@style/textview_primary_big"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="待提现金额：" />
+
+
+                <EditText
+                    android:id="@+id/withdraw_request"
+                    style="@style/textview_secondary_big"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="150dp"
+                    android:hint="0.0"
+                    android:singleLine="true" />
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="20dp">
+
+                <TextView
+                    style="@style/textview_primary_big"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="提现剩余次数：" />
+
+
+                <EditText
+                    android:id="@+id/withdraw_times_left"
+                    style="@style/textview_secondary_big"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="150dp"
+                    android:hint="1"
+                    android:singleLine="true" />
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="20dp">
+
+                <TextView
+                    style="@style/textview_primary_big"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="其他信息：" />
+
+                <TextView
+                    android:id="@+id/extra_info"
+                    style="@style/textview_secondary_big"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="150dp"
+                    android:text="" />
+
+
+            </FrameLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="60dp">
+
+                <Button
+                    android:id="@+id/withdraw_request_onekey"
+                    style="@style/textview_primary_big"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="一键提现" />
+
+                <Button
+                    android:id="@+id/update_money_button"
+                    style="@style/textview_primary_big"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:text="自定义修改" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</android.support.v4.widget.SwipeRefreshLayout>

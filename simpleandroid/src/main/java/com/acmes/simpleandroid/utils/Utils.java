@@ -2,6 +2,7 @@ package com.acmes.simpleandroid.utils;
 
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
+import android.text.TextUtils;
 import android.widget.Toast;
 
 import com.acmes.simpleandroid.mvc.SimpleApplication;
@@ -52,10 +53,41 @@ public class Utils {
      * @return
      */
     public static final void showToast(String message) {
+        if (TextUtils.isEmpty(message)) {
+            return;
+        }
         Toast.makeText(SimpleApplication.getInstance(), message, Toast.LENGTH_SHORT).show();
     }
 
+    public static float parseFloat(String value, float defaultValue) {
+        try {
+            if (!TextUtils.isEmpty(value)) {
+                return Float.parseFloat(value);
+            }
+        } catch (Exception e) {
+        }
+        return defaultValue;
+    }
+
+    public static int parseInt(String value, int defaultValue) {
+        try {
+            if (!TextUtils.isEmpty(value) && TextUtils.isDigitsOnly(value)) {
+                return Integer.parseInt(value);
+            }
+        } catch (Exception e) {
+        }
+        return defaultValue;
+    }
 
 
+    public static long parseLong(String value, long defaultValue) {
+        try {
+            if (!TextUtils.isEmpty(value) && TextUtils.isDigitsOnly(value)) {
+                return Long.parseLong(value);
+            }
+        } catch (Exception e) {
+        }
+        return defaultValue;
+    }
 
 }

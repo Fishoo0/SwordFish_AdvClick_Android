@@ -13,7 +13,15 @@
     <string name="format_prime_time_left">剩余试用时间: %s</string>
     <string name="format_yuan">%s 元</string>
     <string name="format_withdraw_times_left">%s 次</string>
+    <string name="value_start_search">开始搜索</string>
+    <string name="value_stop_search">停止搜索</string>
+    <string name="value_start_click">开始点击</string>
+    <string name="value_stop_click">停止点击</string>
 
+    <string name="prime_level_1">普通会员</string>
+    <string name="prime_level_2">试用会员</string>
+    <string name="prime_level_3">正式版会员</string>
+    <string name="prime_level_4">禁止登陆</string>
 
     <string-array name="array_withdraw_methods">
         <item>支付宝</item>
@@ -25,6 +33,19 @@
         <item>中国银行</item>
         <item>招商银行</item>
         <item>交通银行</item>
+    </string-array>
+
+    <string-array name="prime_level">
+        <item>普通会员</item>
+        <item>试用会员</item>
+        <item>正式会员</item>
+        <item>禁止登陆</item>
+    </string-array>
+
+    <string-array name="admin_operation_list">
+        <item>用户资料</item>
+        <item>金钱管理</item>
+        <item>日志查看</item>
     </string-array>
 
 </resources>

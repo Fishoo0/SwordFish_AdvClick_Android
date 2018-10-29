@@ -24,8 +24,7 @@
         android:text="@string/value_splash_version"
         android:textColor="#444444"
         android:textSize="12sp"
-        android:visibility="gone"
-        />
+        android:visibility="gone" />
 
     <TextView
         android:id="@+id/progress"

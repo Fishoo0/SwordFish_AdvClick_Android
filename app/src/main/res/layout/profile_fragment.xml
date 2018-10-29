@@ -24,7 +24,9 @@
                     style="@style/textview_primary_big"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="用户名:" />
+                    android:text="用户名:"
+
+                    />
 
                 <TextView
                     android:id="@+id/name_textview"
@@ -88,6 +90,7 @@
                     android:layout_gravity="right"
                     android:layout_marginLeft="150dp"
                     android:hint="新密码"
+                    android:singleLine="true"
                     android:textColor="@color/textColorPrimary"
                     android:textColorHint="@color/textColorSecondary" />
 
@@ -114,6 +117,7 @@
                     android:layout_gravity="right"
                     android:layout_marginLeft="150dp"
                     android:hint="新QQ"
+                    android:singleLine="true"
                     android:textColor="@color/textColorPrimary"
                     android:textColorHint="@color/textColorSecondary" />
             </FrameLayout>
@@ -139,6 +143,7 @@
                     android:layout_gravity="right"
                     android:layout_marginLeft="150dp"
                     android:hint="新电话号码"
+                    android:singleLine="true"
                     android:textColor="@color/textColorPrimary"
                     android:textColorHint="@color/textColorSecondary" />
 

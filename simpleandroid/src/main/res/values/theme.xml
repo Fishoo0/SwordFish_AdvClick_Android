@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="AcmeApplicationTheme" parent="@android:style/Theme.DeviceDefault.Light">
-    </style>
+    <style name="AcmeApplicationTheme" parent="@android:style/Theme.DeviceDefault.Light"></style>
 
     <style name="AcmeSplashTheme" parent="AcmeApplicationTheme">
         <item name="android:windowFullscreen">true</item>

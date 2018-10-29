@@ -97,49 +97,46 @@
     <orderEntry type="jdk" jdkName="Android API 25 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="hugo-annotations-1.2.1" level="project" />
-    <orderEntry type="library" exported="" name="support-core-ui-26.0.0-alpha1" level="project" />
     <orderEntry type="library" exported="" name="picasso-2.5.2" level="project" />
     <orderEntry type="library" exported="" name="haha-2.0.3" level="project" />
-    <orderEntry type="library" exported="" name="support-fragment-26.0.0-alpha1" level="project" />
-    <orderEntry type="library" exported="" name="constraint-layout-1.0.2" level="project" />
-    <orderEntry type="library" exported="" name="support-v4-26.0.0-alpha1" level="project" />
-    <orderEntry type="library" exported="" name="support-media-compat-26.0.0-alpha1" level="project" />
+    <orderEntry type="library" exported="" name="transition-25.3.1" level="project" />
     <orderEntry type="library" exported="" name="arcnavigationview-1.0.3" level="project" />
+    <orderEntry type="library" exported="" name="design-25.3.1" level="project" />
     <orderEntry type="library" exported="" name="hugo-runtime-1.2.1" level="project" />
+    <orderEntry type="library" exported="" name="support-core-ui-25.3.1" level="project" />
     <orderEntry type="library" exported="" name="logging-interceptor-3.11.0" level="project" />
     <orderEntry type="library" exported="" name="cupboard-2.2.0" level="project" />
     <orderEntry type="library" exported="" name="rxandroid-2.1.0" level="project" />
+    <orderEntry type="library" exported="" name="dagger-android-support-2.18" level="project" />
     <orderEntry type="library" exported="" name="retrofit-2.4.0" level="project" />
-    <orderEntry type="library" exported="" name="cardview-v7-26.0.0-alpha1" level="project" />
-    <orderEntry type="library" exported="" name="dagger-android-support-2.17" level="project" />
-    <orderEntry type="library" exported="" name="rxjava-2.2.2" level="project" />
     <orderEntry type="library" exported="" name="library-1.1.0" level="project" />
-    <orderEntry type="library" exported="" name="design-26.0.0-alpha1" level="project" />
     <orderEntry type="library" exported="" name="leakcanary-analyzer-1.5.4" level="project" />
+    <orderEntry type="library" exported="" name="rxjava-2.2.3" level="project" />
+    <orderEntry type="library" exported="" name="dagger-android-2.18" level="project" />
     <orderEntry type="library" exported="" name="picasso2-okhttp3-downloader-1.1.0" level="project" />
-    <orderEntry type="library" exported="" name="dagger-android-2.17" level="project" />
+    <orderEntry type="library" exported="" name="support-core-utils-25.3.1" level="project" />
+    <orderEntry type="library" exported="" name="support-fragment-25.3.1" level="project" />
     <orderEntry type="library" exported="" name="butterknife-annotations-8.8.1" level="project" />
     <orderEntry type="library" exported="" name="okhttp-3.11.0" level="project" />
-    <orderEntry type="library" exported="" name="support-core-utils-26.0.0-alpha1" level="project" />
-    <orderEntry type="library" exported="" name="constraint-layout-solver-1.0.2" level="project" />
     <orderEntry type="library" exported="" name="adapter-rxjava2-2.4.0" level="project" />
-    <orderEntry type="library" exported="" name="transition-26.0.0-alpha1" level="project" />
-    <orderEntry type="library" exported="" name="support-vector-drawable-26.0.0-alpha1" level="project" />
     <orderEntry type="library" exported="" name="okio-1.14.0" level="project" />
     <orderEntry type="library" exported="" name="converter-gson-2.4.0" level="project" />
     <orderEntry type="library" exported="" name="javax.inject-1" level="project" />
     <orderEntry type="library" exported="" name="reactive-streams-1.0.2" level="project" />
     <orderEntry type="library" exported="" name="circleimageview-2.2.0" level="project" />
     <orderEntry type="library" exported="" name="aspectjrt-1.8.5" level="project" />
-    <orderEntry type="library" exported="" name="appcompat-v7-26.0.0-alpha1" level="project" />
+    <orderEntry type="library" exported="" name="support-v4-25.3.1" level="project" />
+    <orderEntry type="library" exported="" name="support-media-compat-25.3.1" level="project" />
     <orderEntry type="library" exported="" name="leakcanary-android-1.5.4" level="project" />
-    <orderEntry type="library" exported="" name="recyclerview-v7-26.0.0-alpha1" level="project" />
-    <orderEntry type="library" exported="" name="support-compat-26.0.0-alpha1" level="project" />
-    <orderEntry type="library" exported="" name="support-annotations-26.0.0-alpha1" level="project" />
+    <orderEntry type="library" exported="" name="recyclerview-v7-25.3.1" level="project" />
     <orderEntry type="library" exported="" name="gson-2.8.5" level="project" />
-    <orderEntry type="library" exported="" name="animated-vector-drawable-26.0.0-alpha1" level="project" />
+    <orderEntry type="library" exported="" name="support-annotations-25.3.1" level="project" />
+    <orderEntry type="library" exported="" name="dagger-2.18" level="project" />
     <orderEntry type="library" exported="" name="leakcanary-watcher-1.5.4" level="project" />
+    <orderEntry type="library" exported="" name="appcompat-v7-25.3.1" level="project" />
+    <orderEntry type="library" exported="" name="support-vector-drawable-25.3.1" level="project" />
+    <orderEntry type="library" exported="" name="support-compat-25.3.1" level="project" />
+    <orderEntry type="library" exported="" name="animated-vector-drawable-25.3.1" level="project" />
     <orderEntry type="library" exported="" name="butterknife-8.8.1" level="project" />
-    <orderEntry type="library" exported="" name="dagger-2.17" level="project" />
   </component>
 </module>

@@ -1,12 +1,22 @@
 package acmes.swordfish.advclick.mode;
 
+import java.util.List;
+
 import acmes.swordfish.advclick.mode.bean.BEarn;
+import acmes.swordfish.advclick.mode.bean.BLog;
 import acmes.swordfish.advclick.mode.bean.BUser;
+import acmes.swordfish.advclick.mode.request.AdminOneKeyWithdrawRequest;
+import acmes.swordfish.advclick.mode.request.AdminUpdateMoneyRequest;
+import acmes.swordfish.advclick.mode.request.AdminUserListRequest;
+import acmes.swordfish.advclick.mode.request.AdminUserLogListRequest;
+import acmes.swordfish.advclick.mode.request.CheckYoumengRequest;
 import acmes.swordfish.advclick.mode.request.GetEarnRequest;
+import acmes.swordfish.advclick.mode.request.GetUserRequest;
 import acmes.swordfish.advclick.mode.request.LoginRequest;
 import acmes.swordfish.advclick.mode.request.LogoutRequest;
 import acmes.swordfish.advclick.mode.request.RegisterRequest;
 import acmes.swordfish.advclick.mode.request.RequestWithDrawRequest;
+import acmes.swordfish.advclick.mode.request.UpdateProfileRequest;
 import acmes.swordfish.advclick.mode.request.UploadEarnRequest;
 import acmes.swordfish.advclick.mode.response.AcmesResponse;
 import io.reactivex.Observable;
@@ -31,14 +41,36 @@ public interface AdvClickAPI {
     @POST("auth/logout")
     Observable<AcmesResponse> logout(@Body LogoutRequest request);
 
+    @POST("auth/get_user")
+    Observable<AcmesResponse<BUser>> get_user(@Body GetUserRequest request);
+
+    @POST("auth/update_profile")
+    Observable<AcmesResponse<BUser>> update_profile(@Body UpdateProfileRequest request);
+
+    @POST("auth/check_youmeng")
+    Observable<AcmesResponse<BUser>> check_youmeng(@Body CheckYoumengRequest request);
 
     @POST("click/get_earn")
     Observable<AcmesResponse<BEarn>> get_earn(@Body GetEarnRequest request);
 
     @POST("click/upload_earn")
-    Observable<AcmesResponse> upload_earn(@Body UploadEarnRequest request);
+    Observable<AcmesResponse<BEarn>> upload_earn(@Body UploadEarnRequest request);
 
     @POST("click/request_withdraw")
-    Observable<AcmesResponse> request_earn(@Body RequestWithDrawRequest request);
+    Observable<AcmesResponse<BEarn>> request_earn(@Body RequestWithDrawRequest request);
+
+
+    @POST("admin/get_users")
+    Observable<AcmesResponse<List<BUser>>> admin_user_list(@Body AdminUserListRequest request);
+
+    @POST("admin/get_log_list")
+    Observable<AcmesResponse<List<BLog>>> admin_user_log_list(@Body AdminUserLogListRequest request);
+
+    @POST("admin/update_money")
+    Observable<AcmesResponse<BEarn>> admin_update_money(@Body AdminUpdateMoneyRequest request);
+
+    @POST("admin/onekey_withdraw")
+    Observable<AcmesResponse<BEarn>> admin_onekey_withdraw(@Body AdminOneKeyWithdrawRequest request);
+
 
 }

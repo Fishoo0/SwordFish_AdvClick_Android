@@ -1,6 +1,5 @@
 package acmes.swordfish.advclick.controler.login;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -44,14 +43,6 @@ public class LoginActivity extends AdvClickActivity<LoginMode> implements View.O
 
     public static final String LOGIN_INFO = "user";
 
-    public static final void jumpToThis(Context context, BUser user) {
-        Intent intent = new Intent(context, LoginActivity.class);
-        if (user != null) {
-            intent.putExtra(LOGIN_INFO, user);
-        }
-        context.startActivity(intent);
-    }
-
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -62,12 +53,7 @@ public class LoginActivity extends AdvClickActivity<LoginMode> implements View.O
 
         if (getIntent().hasExtra(LOGIN_INFO)) {
             final BUser user = (BUser) getIntent().getSerializableExtra(LOGIN_INFO);
-            getHandler().postDelayed(new Runnable() {
-                @Override
-                public void run() {
-                    getModel().login(new LoginRequest(user.mUserName, user.mUserPassword));
-                }
-            }, 500);
+            getModel().login(new LoginRequest(user.mUserName, user.mUserPassword));
         }
 
         getSupportActionBar().setTitle("登陆");

@@ -1,6 +1,7 @@
 package acmes.swordfish.advclick;
 
 import android.support.v4.widget.SwipeRefreshLayout;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
@@ -59,7 +60,7 @@ public class AdvClickActivity<T extends AdvClickMode> extends SimpleActivity<T> 
     @Override
     public void onFailure(SimpleRequest request, Throwable exception) {
         super.onFailure(request, exception);
-        if (exception == null) {
+        if (exception == null || TextUtils.isEmpty(exception.getMessage())) {
             exception = new Exception("Unknown Error !");
         }
         Log.e(TAG, exception.getMessage());

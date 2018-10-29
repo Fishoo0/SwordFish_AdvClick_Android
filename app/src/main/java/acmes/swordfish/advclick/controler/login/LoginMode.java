@@ -18,7 +18,7 @@ import acmes.swordfish.advclick.mode.request.RegisterRequest;
 public class LoginMode extends AdvClickMode {
 
     private static LoginMode mLoginMode = new LoginMode();
-    private IAccountManager mAccountManager = SharedPrefAccountManager.getInstance();
+    public IAccountManager mAccountManager = SharedPrefAccountManager.getInstance();
 
     public static LoginMode getInstance() {
         return mLoginMode;

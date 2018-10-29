@@ -36,7 +36,12 @@
         <!--android:theme="@style/MainActivityTheme" />-->
         <activity android:name=".controler.login.LogoutActivity" />
         <activity android:name=".controler.settings.AboutActivity" />
-        <activity android:name=".controler.main.MainActivityNavigation" />
+        <activity android:name=".controler.main.MainActivity" />
+        <activity android:name=".controler.admin.AdminUserListActivity" />
+        <activity android:name=".controler.admin.AdminChooseActivity" />
+        <activity android:name=".controler.admin.AdminUpdateMoneyActivity" />
+        <activity android:name=".controler.admin.AdminUpdateProfileActivity" />
+        <activity android:name=".controler.admin.AdminUserLogListActivity" />
     </application>
 
 </manifest>

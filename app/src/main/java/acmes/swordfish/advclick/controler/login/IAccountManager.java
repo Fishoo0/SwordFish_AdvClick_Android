@@ -38,4 +38,12 @@ public interface IAccountManager {
     void removeUser(BUser user);
 
 
+    /**
+     * Updating user
+     *
+     * @param user
+     */
+    void updateUser(BUser user);
+
+
 }

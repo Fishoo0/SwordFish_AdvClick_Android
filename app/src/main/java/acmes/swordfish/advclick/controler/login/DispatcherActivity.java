@@ -11,7 +11,9 @@ import com.acmes.simpleandroid.mvc.model.SimpleRequest;
 import com.acmes.simpleandroid.mvc.model.SimpleResponse;
 
 import acmes.swordfish.advclick.AdvClickActivity;
-import acmes.swordfish.advclick.controler.main.MainActivityNavigation;
+import acmes.swordfish.advclick.controler.admin.AdminChooseActivity;
+import acmes.swordfish.advclick.controler.main.MainActivity;
+import acmes.swordfish.advclick.mode.bean.BUser;
 import acmes.swordfish.advclick.mode.request.LoginRequest;
 
 /**
@@ -28,6 +30,7 @@ public class DispatcherActivity extends AdvClickActivity<LoginMode> {
     public static final int CMD_CLOSE_APP = 3;
 
     public static final String KEY_CMD = "cmd";
+
 
     IAccountManager mAccountManager = SharedPrefAccountManager.getInstance();
 
@@ -59,14 +62,18 @@ public class DispatcherActivity extends AdvClickActivity<LoginMode> {
             case CMD_LOGIN:
             case CMD_AUTO:
             default:
-                if (mAccountManager.getCurrentUser() == null) {
+                if (mAccountManager.getCurrentUser() == null || intent.hasExtra(LoginActivity.LOGIN_INFO)) {
                     Log.v(TAG, "\t no current user, goto LoginActivity ");
                     //no current user ,goto login activity
                     startActivity(new Intent(DispatcherActivity.this, LoginActivity.class).putExtras(intent));
                 } else {
                     Log.v(TAG, "\t refresh login status, goto MainActivity");
-                    startActivity(new Intent(DispatcherActivity.this, MainActivityNavigation.class));
                     getModel().login(new LoginRequest(mAccountManager.getCurrentUser().mUserName));
+                    if (SharedPrefAccountManager.getInstance().getCurrentUser().isAdmin()) {
+                        startActivity(new Intent(DispatcherActivity.this, AdminChooseActivity.class));
+                    } else {
+                        startActivity(new Intent(DispatcherActivity.this, MainActivity.class));
+                    }
                 }
                 break;
         }
@@ -93,7 +100,7 @@ public class DispatcherActivity extends AdvClickActivity<LoginMode> {
             if (!(response.isSuccess())) {
                 Log.e(TAG, "\t login failed, jump to this for further processing");
                 Toast.makeText(this, response.getMessage(), Toast.LENGTH_SHORT).show();
-                DispatcherActivity.jumpToThis(this, CMD_LOGOUT);
+                DispatcherActivity.jumpToThisForLogout(this);
             } else {
                 // Login successfully
             }
@@ -109,20 +116,34 @@ public class DispatcherActivity extends AdvClickActivity<LoginMode> {
         jumpToThis(context, CMD_AUTO, getJumpToThisIntent(context));
     }
 
-    public static final void jumpToThis(Context context, int cmd) {
+    public static final void jumpToThisForLogout(Context context) {
+        jumpToThis(context, CMD_LOGOUT);
+    }
+
+    public static final void jumpToThisForLogin(Context context, BUser user) {
+        if (user == null) {
+            throw new IllegalArgumentException("BUse must not be null !");
+        }
+        Intent intent = getJumpToThisIntent(context);
+        intent.putExtra(LoginActivity.LOGIN_INFO, user);
+        jumpToThis(context, CMD_LOGIN, intent);
+    }
+
+
+    private static final void jumpToThis(Context context, int cmd) {
         jumpToThis(context, cmd, getJumpToThisIntent(context));
     }
 
-    public static final void jumpToThis(Context context, int cmd, Intent intent) {
+    private static final void jumpToThis(Context context, int cmd, Intent intent) {
         if (!intent.hasExtra(KEY_CMD)) {
             intent.putExtra(KEY_CMD, cmd);
         }
         context.startActivity(intent);
     }
 
-    public static final Intent getJumpToThisIntent(Context context) {
+    private static final Intent getJumpToThisIntent(Context context) {
         Intent intent = new Intent(context, DispatcherActivity.class);
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
         return intent;
     }
 

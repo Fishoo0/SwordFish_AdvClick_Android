@@ -1,5 +1,7 @@
 package com.acmes.simpleandroid.mvc.model;
 
+import android.os.Handler;
+
 import com.acmes.simpleandroid.mvc.ISimpleModeCallback;
 
 import java.util.ArrayList;
@@ -17,6 +19,8 @@ public abstract class SimpleModel implements ISimpleModeCallback {
     protected final String TAG = getClass().getSimpleName();
 
     protected List<ISimpleModeCallback> mSimpleCallbacks = new ArrayList<>();
+
+    protected Handler mUIHandler;
 
     public SimpleModel() {
     }
@@ -156,6 +160,13 @@ public abstract class SimpleModel implements ISimpleModeCallback {
         for (ISimpleModeCallback callback : mSimpleCallbacks) {
             callback.onFailure(request, exception);
         }
+    }
+
+    protected Handler getUIHandler() {
+        if (mUIHandler == null) {
+            mUIHandler = new Handler();
+        }
+        return mUIHandler;
     }
 
 }

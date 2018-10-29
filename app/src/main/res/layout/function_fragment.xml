@@ -107,20 +107,20 @@
 
                 <FrameLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="200dp"
                     android:paddingBottom="20dp"
                     android:paddingLeft="20dp"
                     android:paddingRight="20dp"
                     android:paddingTop="20dp">
 
-                    <EditText
+                    <TextView
                         android:id="@+id/search_response"
                         style="@style/textview_secondary"
                         android:layout_width="match_parent"
-                        android:layout_height="200dp"
-                        android:editable="false"
-                        android:gravity="start"
-                        android:text="开始搜索广告"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:hint="搜索结果"
+                        android:scrollbars="none"
                         android:textColor="@color/textColorPrimary" />
                 </FrameLayout>
 
@@ -141,7 +141,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginRight="5dp"
                         android:layout_weight="1"
-                        android:text="开始点击" />
+                        android:text="@string/value_start_search" />
 
                     <Button
                         android:id="@+id/start_click_button"
@@ -150,7 +150,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="5dp"
                         android:layout_weight="1"
-                        android:text="开始搜索" />
+                        android:text="@string/value_start_click" />
 
                 </LinearLayout>
 
@@ -212,7 +212,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="right"
                             android:layout_marginLeft="150dp"
-                            android:text="10元" />
+                            android:text="0.0000 元" />
 
                     </FrameLayout>
 
@@ -235,7 +235,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="right"
                             android:layout_marginLeft="150dp"
-                            android:text="100元" />
+                            android:text="0.0000 元" />
 
                     </FrameLayout>
 

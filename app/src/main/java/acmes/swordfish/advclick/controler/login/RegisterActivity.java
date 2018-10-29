@@ -65,14 +65,7 @@ public class RegisterActivity extends AdvClickActivity<LoginMode> {
         super.onResponse(request, response);
         if (request instanceof RegisterRequest) {
             if (response.isSuccess()) {
-                DispatcherActivity.jumpToThis(
-                        this,
-                        DispatcherActivity.CMD_LOGIN,
-                        DispatcherActivity
-                                .getJumpToThisIntent(this)
-                                .putExtra(LoginActivity.LOGIN_INFO,
-                                        new BUser(((RegisterRequest) request).name, ((RegisterRequest) request).password))
-                );
+                DispatcherActivity.jumpToThisForLogin(this, new BUser(((RegisterRequest) request).name, ((RegisterRequest) request).password));
                 finish();
             }
         }

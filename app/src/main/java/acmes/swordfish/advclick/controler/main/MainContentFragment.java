@@ -16,4 +16,11 @@ public class MainContentFragment extends AdvClickFragment<ClickMode> {
     protected ClickMode createModel() {
         return ClickMode.getInstance();
     }
+
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        getModel().removeSimpleCallback(this);
+    }
 }

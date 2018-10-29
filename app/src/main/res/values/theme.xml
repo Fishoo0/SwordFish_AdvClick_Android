@@ -32,7 +32,6 @@
         <item name="android:windowIsTranslucent">true</item>
     </style>
 
-    <style name="MainActivityTheme" parent="AcmesTheme.NoActionBar">
-    </style>
+    <style name="MainActivityTheme" parent="AcmesTheme.NoActionBar"></style>
 
 </resources>

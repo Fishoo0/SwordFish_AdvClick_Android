@@ -22,7 +22,7 @@ import butterknife.ButterKnife;
 
 public abstract class SimpleFragment<T extends SimpleModel> extends Fragment implements ISimpleModeCallback {
 
-    protected final String TAG = getClass().getSimpleName();
+    protected final String TAG = getClass().getSimpleName() + this;
 
     private Handler mHandler = new Handler();
     private T mModel;

@@ -31,4 +31,11 @@
         <item name="android:textColor">@color/textColorSecondary</item>
     </style>
 
+
+    <style name="admin_user_list_item" parent="textview_primary">
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+    </style>
+
 </resources>

@@ -33,9 +33,17 @@ public class BEarn implements Serializable {
     public String mLastRequestTime;
 
     @SerializedName("manager_with_draw_amount")
-    public float mLastManagerResponseAmout;
+    public float mLastManagerResponseAmount;
 
     @SerializedName("manager_with_draw_time")
     public float mLastManagerResponseTime;
+
+    public String getEarnAmountString() {
+        return String.format("%.04f", mEarnAmount);
+    }
+
+    public String getRequestWithDrawAmountString() {
+        return String.format("%.04f", mLastRequestAmount);
+    }
 
 }

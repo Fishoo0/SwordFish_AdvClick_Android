@@ -20,8 +20,6 @@ import acmes.swordfish.advclick.controler.login.SharedPrefAccountManager;
 import acmes.swordfish.advclick.controler.main.MainContentFragment;
 import acmes.swordfish.advclick.mode.bean.BEarn;
 import acmes.swordfish.advclick.mode.bean.BUser;
-import acmes.swordfish.advclick.mode.request.GetEarnRequest;
-import acmes.swordfish.advclick.mode.request.RequestWithDrawRequest;
 import butterknife.BindView;
 import butterknife.OnClick;
 
@@ -66,7 +64,7 @@ public class WithDrawFragment extends MainContentFragment implements View.OnClic
             mPayAccount.setText(user.mAlipay);
             mPayUserName.setText(user.mAlipayName);
         } else {
-            DispatcherActivity.jumpToThis(getContext(), DispatcherActivity.CMD_LOGOUT);
+            DispatcherActivity.jumpToThisForLogout(getContext());
         }
 
         // 查询结果
@@ -81,8 +79,7 @@ public class WithDrawFragment extends MainContentFragment implements View.OnClic
 
     @Override
     public void onRefresh() {
-        GetEarnRequest request = new GetEarnRequest(SharedPrefAccountManager.getInstance().getCurrentUser());
-        getModel().performRequest(request);
+        getModel().getEarn();
     }
 
 
@@ -102,10 +99,7 @@ public class WithDrawFragment extends MainContentFragment implements View.OnClic
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.with_draw_request_button:
-                RequestWithDrawRequest request =
-                        new RequestWithDrawRequest(
-                                SharedPrefAccountManager.getInstance().getCurrentUser().mUserId);
-                getModel().performRequest(request);
+                getModel().requestWithDraw();
                 break;
             case R.id.with_draw_response_button:
                 onRefresh();
@@ -116,22 +110,21 @@ public class WithDrawFragment extends MainContentFragment implements View.OnClic
 
     @SuppressLint("StringFormatMatches")
     private void updateView(BEarn data) {
-        mEarnCount.setText(String.format(getString(R.string.format_yuan), data.mEarnAmount));
+        mEarnCount.setText(String.format(getResources().getString(R.string.format_yuan), data.getEarnAmountString()));
         mWithDrawTimes.setText(String.format(getString(R.string.format_withdraw_times_left), data.mWithDrawTimesLeft));
 
         // generate result
         StringBuilder stringBuilder = new StringBuilder();
-        if (data.mLastManagerResponseAmout < 0 || TextUtils.isEmpty(data.mLastRequestTime)) {
-            stringBuilder.append("从未发起过提现");
+        if (data.mLastManagerResponseAmount <= 0 || TextUtils.isEmpty(data.mLastRequestTime)) {
+            stringBuilder.append("无待处理提现");
         } else {
             stringBuilder.append(data.mLastRequestTime);
             stringBuilder.append(" (");
-            if (data.mLastRequestAmount == 0) {
-                stringBuilder.append("已申请，已于 ");
-                stringBuilder.append(data.mLastManagerResponseTime);
-                stringBuilder.append(" 处理");
-            } else {
+            if (data.mLastRequestAmount > 0) {
                 stringBuilder.append("已申请，未处理");
+            } else {
+                stringBuilder.append("管理员最后处理时间 ");
+                stringBuilder.append(data.mLastManagerResponseTime);
             }
             stringBuilder.append(")");
         }

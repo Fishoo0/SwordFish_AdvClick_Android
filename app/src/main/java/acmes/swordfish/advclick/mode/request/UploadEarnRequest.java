@@ -1,6 +1,7 @@
 package acmes.swordfish.advclick.mode.request;
 
 import acmes.swordfish.advclick.mode.AdvClickAPI;
+import acmes.swordfish.advclick.mode.bean.BSearch;
 import io.reactivex.Observable;
 
 /**
@@ -12,9 +13,12 @@ public class UploadEarnRequest extends AcmesRequest {
     public String user_id;
     public float value;
 
-    public UploadEarnRequest(String userId, float value) {
+    public BSearch mSearch;
+
+    public UploadEarnRequest(String userId, BSearch search) {
         user_id = userId;
-        this.value = value;
+        mSearch = search;
+        this.value = search.mEarn - search.mEarnUploaded;
     }
 
 

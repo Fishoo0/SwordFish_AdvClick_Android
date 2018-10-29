@@ -6,9 +6,10 @@ import android.content.SharedPreferences;
 import android.text.TextUtils;
 import android.util.Log;
 
+import com.google.gson.Gson;
+
 import acmes.swordfish.advclick.AdvClickApplication;
 import acmes.swordfish.advclick.mode.bean.BUser;
-import com.google.gson.Gson;
 
 /**
  * Created by fishyu on 2018/1/2.
@@ -61,6 +62,12 @@ public class SharedPrefAccountManager implements IAccountManager {
         editor.remove(KEY_ACCOUNT);
         editor.commit();
         mCurrentUser = null;
+    }
+
+    @Override
+    public void updateUser(BUser user) {
+        removeUser(null);
+        addUser(user);
     }
 
 

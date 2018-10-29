@@ -13,8 +13,14 @@ import retrofit2.Retrofit;
 
 public class AdvClickApplication extends SimpleApplication {
 
+    protected SquareNetwork mSquareNetwork;
+
     public static AdvClickApplication getInstance() {
         return (AdvClickApplication) SimpleApplication.getInstance();
+    }
+
+    public static Picasso getPicasso() {
+        return getInstance().mSquareNetwork.getPicasso();
     }
 
     @DebugLog
@@ -36,12 +42,6 @@ public class AdvClickApplication extends SimpleApplication {
             }
             updateProgress(getInitializeProgress() + 1);
         }
-    }
-
-    protected SquareNetwork mSquareNetwork;
-
-    public static Picasso getPicasso() {
-        return getInstance().mSquareNetwork.getPicasso();
     }
 
     public Retrofit buildRetrofit(String url) {
