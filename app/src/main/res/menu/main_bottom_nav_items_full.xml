@@ -2,34 +2,34 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+
     <item
         android:id="@+id/with_draw"
-        android:icon="@drawable/ic_done_white_24dp"
-        android:title="WithDraw"
+        android:icon="@drawable/ic_looks_one_black_24dp"
+        android:title="提现"
         app:showAsAction="ifRoom" />
 
     <item
         android:id="@+id/function"
-        android:icon="@drawable/ic_done_white_24dp"
-        android:title="Function"
+        android:icon="@drawable/ic_looks_two_black_24dp"
+        android:title="搜索"
         app:showAsAction="ifRoom" />
 
     <item
         android:id="@+id/buy"
-        android:icon="@drawable/ic_done_white_24dp"
-        android:title="Buy"
+        android:icon="@drawable/ic_looks_3_black_24dp"
+        android:title="购买"
         app:showAsAction="ifRoom" />
 
     <item
         android:id="@+id/profile"
-        android:icon="@drawable/ic_done_white_24dp"
-        android:title="Profile"
+        android:icon="@drawable/ic_looks_4_black_24dp"
+        android:title="主页"
         app:showAsAction="ifRoom" />
-
     <item
         android:id="@+id/youmeng"
-        android:icon="@drawable/ic_done_white_24dp"
-        android:title="YouMeng"
+        android:icon="@drawable/ic_looks_5_black_24dp"
+        android:title="友盟"
         app:showAsAction="ifRoom" />
 
 </menu>

@@ -1,7 +1,6 @@
 package acmes.swordfish.advclick.mode.request;
 
 import acmes.swordfish.advclick.mode.AdvClickAPI;
-
 import io.reactivex.Observable;
 
 /**
@@ -10,11 +9,10 @@ import io.reactivex.Observable;
 
 public class LogoutRequest extends AcmesRequest {
 
-    public String name;
-    public String password;
+    public String id;
 
-    public LogoutRequest(String userName) {
-        name = userName;
+    public LogoutRequest(String user_id) {
+        id = user_id;
     }
 
     @Override

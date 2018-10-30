@@ -6,13 +6,13 @@
     android:padding="10dp">
 
     <TextView
-        android:id="@+id/operation"
+        android:id="@+id/user_name"
         style="@style/admin_user_list_item"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <TextView
-        android:id="@+id/device"
+        android:id="@+id/operation"
         style="@style/admin_user_list_item"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
@@ -34,6 +34,5 @@
         style="@style/admin_user_list_item"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
-
 
 </LinearLayout>

@@ -35,7 +35,7 @@ public class PrimeTrialTextView extends TickingTextView {
     @Override
     public void onTicking() {
         super.onTicking();
-        setText(String.format(getResources().getString(R.string.format_prime_time_left), String.valueOf(mUser.getPrimeTimeLeft())));
+        setText(String.format(getResources().getString(R.string.format_prime_time_left), mUser.getPrimeTimeLeftString()));
     }
 
     private BUser mUser;

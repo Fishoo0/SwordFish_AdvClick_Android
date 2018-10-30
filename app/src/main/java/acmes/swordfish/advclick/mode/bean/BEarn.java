@@ -1,5 +1,7 @@
 package acmes.swordfish.advclick.mode.bean;
 
+import android.text.TextUtils;
+
 import com.google.gson.annotations.SerializedName;
 
 import java.io.Serializable;
@@ -32,11 +34,8 @@ public class BEarn implements Serializable {
     @SerializedName("request_with_draw_time")
     public String mLastRequestTime;
 
-    @SerializedName("manager_with_draw_amount")
-    public float mLastManagerResponseAmount;
-
-    @SerializedName("manager_with_draw_time")
-    public float mLastManagerResponseTime;
+    @SerializedName("manager_deal_time")
+    public String mLastManagerResponseTime;
 
     public String getEarnAmountString() {
         return String.format("%.04f", mEarnAmount);
@@ -44,6 +43,15 @@ public class BEarn implements Serializable {
 
     public String getRequestWithDrawAmountString() {
         return String.format("%.04f", mLastRequestAmount);
+    }
+
+
+    public String getLastRequestTime() {
+        return TextUtils.isEmpty(mLastRequestTime) ? "Nah" : mLastRequestTime;
+    }
+
+    public String getLastManagerResponseTime() {
+        return TextUtils.isEmpty(mLastManagerResponseTime) ? "Nah" : mLastManagerResponseTime;
     }
 
 }

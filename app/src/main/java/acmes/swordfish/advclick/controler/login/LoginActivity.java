@@ -8,6 +8,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.acmes.simpleandroid.mvc.model.SimpleRequest;
@@ -16,6 +17,7 @@ import com.acmes.simpleandroid.utils.Utils;
 
 import acmes.swordfish.advclick.AdvClickActivity;
 import acmes.swordfish.advclick.R;
+import acmes.swordfish.advclick.mode.bean.BSearch;
 import acmes.swordfish.advclick.mode.bean.BUser;
 import acmes.swordfish.advclick.mode.request.LoginRequest;
 import butterknife.BindView;
@@ -41,6 +43,9 @@ public class LoginActivity extends AdvClickActivity<LoginMode> implements View.O
     @BindView(R.id.user_password)
     protected EditText mUserPassword;
 
+    @BindView(R.id.online_number)
+    TextView mOnlineNumber;
+
     public static final String LOGIN_INFO = "user";
 
 
@@ -54,7 +59,14 @@ public class LoginActivity extends AdvClickActivity<LoginMode> implements View.O
         if (getIntent().hasExtra(LOGIN_INFO)) {
             final BUser user = (BUser) getIntent().getSerializableExtra(LOGIN_INFO);
             getModel().login(new LoginRequest(user.mUserName, user.mUserPassword));
+
+            mUserName.setText(user.mUserName);
+            mUserPassword.setText(user.mUserPassword);
         }
+
+
+        mOnlineNumber.setText(String.format(getString(R.string.format_login_online), String.valueOf(BSearch.getOnlineNumber())));
+
 
         getSupportActionBar().setTitle("登陆");
     }
@@ -115,6 +127,12 @@ public class LoginActivity extends AdvClickActivity<LoginMode> implements View.O
                 Toast.makeText(this, "请尝试联系管理员", Toast.LENGTH_LONG).show();
                 break;
         }
+    }
+
+
+    @Override
+    public void onBackPressed() {
+        Utils.backToLauncher(this);
     }
 
 }

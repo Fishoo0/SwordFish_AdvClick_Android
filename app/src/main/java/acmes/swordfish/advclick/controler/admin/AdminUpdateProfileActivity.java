@@ -17,6 +17,7 @@ import com.acmes.simpleandroid.utils.Utils;
 
 import acmes.swordfish.advclick.AdvClickActivity;
 import acmes.swordfish.advclick.R;
+import acmes.swordfish.advclick.controler.login.SharedPrefAccountManager;
 import acmes.swordfish.advclick.mode.bean.BUser;
 import acmes.swordfish.advclick.mode.request.GetUserRequest;
 import acmes.swordfish.advclick.mode.request.UpdateProfileRequest;
@@ -71,7 +72,7 @@ public class AdminUpdateProfileActivity extends AdvClickActivity implements View
 
                 if (position == BUser.PRIME_TRY) {
                     mPrimePeriod.setVisibility(View.VISIBLE);
-                    mPrimePeriod.setHint(mUser.getPrimeTimeLeftString());
+                    mPrimePeriod.setHint(mUser.getPrimeTimeLeftHourString());
                 } else {
                     mPrimePeriod.setVisibility(View.GONE);
                 }
@@ -107,7 +108,7 @@ public class AdminUpdateProfileActivity extends AdvClickActivity implements View
             if (mUser.mPrimeLevel == BUser.PRIME_TRY) {
                 mPrimePeriod.setVisibility(View.VISIBLE);
                 mPrimePeriod.setText("");
-                mPrimePeriod.setHint(data.getPrimeTimeLeftString());
+                mPrimePeriod.setHint(data.getPrimeTimeLeftHourString());
             } else {
                 mPrimePeriod.setVisibility(View.GONE);
                 mPrimePeriod.setHint("");
@@ -151,7 +152,17 @@ public class AdminUpdateProfileActivity extends AdvClickActivity implements View
             updateView(response.getData());
         }
 
-        Utils.showToast(response.getMessage());
+        if (response.getData() instanceof BUser) {
+            BUser user = (BUser) response.getData();
+            // if is current user, update
+            if (user.mUserId.equals(SharedPrefAccountManager.getInstance().getCurrentUser().mUserId)) {
+                SharedPrefAccountManager.getInstance().updateUser(user);
+            }
+        }
+
+        if (request instanceof UpdateProfileRequest || !response.isSuccess()) {
+            Utils.showToast(response.getMessage());
+        }
     }
 
 

@@ -12,30 +12,21 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/fishyu/.android/build-cache/1c35632aa93014d7ebb41267ae2988445e9af6f2/output/jars/classes.jar"
+        jar="/Users/fishyu/.android/build-cache/9a30e29b5ff5362774658786333c332a9a68bf18/output/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
-        sha1="148fa5e5e759985762bb80b004fc784eb287ee9e">
-        <dex dex="/Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/build/intermediates/pre-dexed/debug/classes_a296d51998233d52fc955a10d9932629da400c2e.jar" />
+        sha1="34d18d372c64470c5cf34dc06c0dc3dc717f95e0">
+        <dex dex="/Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/build/intermediates/pre-dexed/debug/classes_aed96ac019b6f4589ba059aebb593b00df4e6ed5.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/fishyu/.android/build-cache/1ea8f3d6667d90270b1e76000176d9d467c9678b/output/jars/classes.jar"
+        jar="/Users/fishyu/.android/build-cache/51fa5ae193fe4caf7475c99fb64828d7fe9a31a5/output/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
-        sha1="c481357d377d190c7aea47712681f7a8a3946481">
-        <dex dex="/Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/build/intermediates/pre-dexed/debug/classes_59c037faff08983d2db85d28378aac11e29ac213.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/fishyu/.gradle/caches/modules-2/files-2.1/com.google.dagger/dagger/2.18/ccf08b5bb60a4b4c149524595ec1d2eb02b8ba80/dagger-2.18.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="ccf08b5bb60a4b4c149524595ec1d2eb02b8ba80">
-        <dex dex="/Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/build/intermediates/pre-dexed/debug/dagger-2.18_9afc1d7513535e6d6afa7b74da7489f33d6d7b5f.jar" />
+        sha1="e9c8428868ec7313a2d28b24bb20500bd1272fe4">
+        <dex dex="/Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/build/intermediates/pre-dexed/debug/classes_769b1d21c2813f83e205f16dad08c2f9814df064.jar" />
     </item>
     <item
         is-multidex="false"
@@ -70,7 +61,7 @@
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
-        sha1="12055a6bd3f09d794e2dfe2357a29a2f2e3b4eef">
+        sha1="347b30764f031d62501bd503e58c27ce2ef09571">
         <dex dex="/Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/build/intermediates/pre-dexed/debug/classes_0191cce6d00127ec83c9e62a985bf220a5441b2d.jar" />
     </item>
     <item
@@ -144,6 +135,15 @@
         revision="25.0.0"
         sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
         <dex dex="/Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/build/intermediates/pre-dexed/debug/classes_0cfa75d776881c464ddd1cc103be097d7a5b072f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/fishyu/.gradle/caches/modules-2/files-2.1/com.google.dagger/dagger/2.19/ccf08b5bb60a4b4c149524595ec1d2eb02b8ba80/dagger-2.19.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ccf08b5bb60a4b4c149524595ec1d2eb02b8ba80">
+        <dex dex="/Users/fishyu/Work/SwordFish/AdvClick/Android/AdvClick/app/build/intermediates/pre-dexed/debug/dagger-2.19_3d770a07d2bf15ba6717289c8bbbe8544aee3b0b.jar" />
     </item>
     <item
         is-multidex="false"

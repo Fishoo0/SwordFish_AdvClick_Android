@@ -64,7 +64,10 @@ public class AdminUpdateMoneyActivity extends AdvClickActivity implements View.O
             mWithDrawAmount.setHint(data.getRequestWithDrawAmountString());
             mWithDrawTimesLeft.setHint(String.valueOf(data.mWithDrawTimesLeft));
 
-            mExtraInfo.setText("" + data.mLastRequestTime);
+            mExtraInfo.setText("最近提现时间 " + data.getLastRequestTime() + "\n" +
+                    "最近受理时间 " + data.getLastManagerResponseTime()
+            );
+
 
         }
     }
@@ -94,13 +97,13 @@ public class AdminUpdateMoneyActivity extends AdvClickActivity implements View.O
     @Override
     public void onResponse(SimpleRequest request, SimpleResponse response) {
         super.onResponse(request, response);
-
         if (response.isSuccess()) {
             updateView(response.getData());
         }
 
-
-        Utils.showToast(response.getMessage());
+        if (request instanceof AdminOneKeyWithdrawRequest || request instanceof AdminUpdateMoneyRequest || !response.isSuccess()) {
+            Utils.showToast(response.getMessage());
+        }
     }
 
 

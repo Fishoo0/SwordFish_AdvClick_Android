@@ -124,7 +124,33 @@ public class BUser implements Serializable {
     }
 
     public String getPrimeTimeLeftString() {
-        return getPrimeTimeLeft() + "秒";
+        switch (mPrimeLevel) {
+            case PRIME:
+                return "无限制";
+            case PRIME_TRY:
+                return getPrimeTimeLeft() + "秒";
+            case PRIME_FORBIDDEN:
+            case PRIME_NORMAL:
+            default:
+                return "屁都没有";
+        }
+
+    }
+
+    public String getPrimeTimeLeftHourString() {
+        switch (mPrimeLevel) {
+            case PRIME:
+                return "无限制";
+            case PRIME_TRY:
+                long seconds = getPrimeTimeLeft();
+                long hour = (seconds / 3600) + (seconds % 3600 > 0 ? 1 : 0);
+                return hour + "小时";
+            case PRIME_FORBIDDEN:
+            case PRIME_NORMAL:
+            default:
+                return "屁都没有";
+        }
+
     }
 
 

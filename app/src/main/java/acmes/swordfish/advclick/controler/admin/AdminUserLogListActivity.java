@@ -21,8 +21,10 @@ import java.util.List;
 import acmes.swordfish.advclick.AdvClickActivity;
 import acmes.swordfish.advclick.R;
 import acmes.swordfish.advclick.controler.login.SharedPrefAccountManager;
+import acmes.swordfish.advclick.mode.bean.BLog;
 import acmes.swordfish.advclick.mode.bean.BUser;
 import acmes.swordfish.advclick.mode.request.AdminUserListRequest;
+import acmes.swordfish.advclick.mode.request.AdminUserLogListRequest;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
@@ -64,7 +66,7 @@ public class AdminUserLogListActivity extends AdvClickActivity implements View.O
     public void onResponse(SimpleRequest request, SimpleResponse response) {
         super.onResponse(request, response);
 
-        if (request instanceof AdminUserListRequest) {
+        if (request instanceof AdminUserLogListRequest) {
             if (response.getData() instanceof List) {
 
                 //update view
@@ -86,7 +88,7 @@ public class AdminUserLogListActivity extends AdvClickActivity implements View.O
         super.onRefresh();
 
         // start request
-        getModel().performRequest(new AdminUserListRequest(SharedPrefAccountManager.getInstance().getCurrentUser().mUserId));
+        getModel().performRequest(new AdminUserLogListRequest(SharedPrefAccountManager.getInstance().getCurrentUser().mUserId));
     }
 
     static class Adapter extends BaseAdapter {
@@ -121,18 +123,18 @@ public class AdminUserLogListActivity extends AdvClickActivity implements View.O
             } else {
                 view = new ItemView(parent.getContext());
             }
-            view.updateView((BUser) getItem(position));
+            view.updateView(getItem(position));
             return view;
         }
 
 
         static class ItemView extends FrameLayout {
 
+            @BindView(R.id.user_name)
+            TextView mUserName;
+
             @BindView(R.id.operation)
             TextView mOperation;
-
-            @BindView(R.id.device)
-            TextView mDevice;
 
             @BindView(R.id.network)
             TextView mNetwork;
@@ -151,12 +153,17 @@ public class AdminUserLogListActivity extends AdvClickActivity implements View.O
                 ButterKnife.bind(this, this);
             }
 
-            public void updateView(BUser data) {
-                mOperation.setText("操作：" + data.mUserName);
-                mDevice.setText("设备：" + data.mUserPassword);
-                mNetwork.setText("网络：" + data.mQQ);
-                mLocation.setText("地址："+data.mPrimeOpenTime);
-                mTime.setText("时间：" + data.mTelephone);
+            public void updateView(Object objData) {
+                if (objData instanceof BLog) {
+                    BLog data = (BLog) objData;
+
+                    mOperation.setText("用户名：" + data.mUser.mUserName);
+
+                    mUserName.setText("操作：" + data.mOperation);
+                    mNetwork.setText("网络：" + data.mNetwork);
+                    mLocation.setText("地址：" + data.mLocation);
+                    mTime.setText("时间：" + data.mTime);
+                }
             }
         }
 

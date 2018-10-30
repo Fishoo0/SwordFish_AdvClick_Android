@@ -7,13 +7,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import com.acmes.simpleandroid.mvc.model.SimpleRequest;
 import com.acmes.simpleandroid.mvc.model.SimpleResponse;
+import com.acmes.simpleandroid.utils.Utils;
 
 import acmes.swordfish.advclick.R;
 import acmes.swordfish.advclick.controler.login.DispatcherActivity;
 import acmes.swordfish.advclick.controler.main.MainContentFragment;
+import acmes.swordfish.advclick.mode.request.LogoutRequest;
 import acmes.swordfish.advclick.mode.request.UpdateProfileRequest;
 import butterknife.BindView;
 import butterknife.OnClick;
@@ -23,6 +26,19 @@ import butterknife.OnClick;
  */
 
 public class ProfileFragment extends MainContentFragment implements View.OnClickListener {
+
+
+    @BindView(R.id.name_textview)
+    TextView mName;
+
+    @BindView(R.id.prime_type_textview)
+    TextView mPrime;
+
+    @BindView(R.id.alipay)
+    TextView mAlipay;
+
+    @BindView(R.id.alipay_name)
+    TextView mAlipayName;
 
 
     @BindView(R.id.change_password_edittext)
@@ -58,15 +74,23 @@ public class ProfileFragment extends MainContentFragment implements View.OnClick
     }
 
     private void updateView() {
+        mName.setText(getModel().getUser().mUserName);
+        mPrime.setText(getModel().getUser().getPrimeString());
+        mAlipay.setText(getModel().getUser().mAlipay);
+        mAlipayName.setText(getModel().getUser().mAlipayName);
+
+
         mPassword.setText("");
         mQQ.setText("");
         mPhone.setText("");
 
         mQQ.setHint(getModel().getUser().mQQ);
         mPhone.setHint(getModel().getUser().mTelephone);
+
+
     }
 
-    @OnClick(R.id.with_draw_request_button)
+    @OnClick({R.id.with_draw_request_button, R.id.logout})
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
@@ -76,6 +100,13 @@ public class ProfileFragment extends MainContentFragment implements View.OnClick
                         mQQ.getText().toString(),
                         mPhone.getText().toString());
                 getModel().performRequest(request);
+                break;
+            case R.id.logout:
+
+                LogoutRequest logoutRequest = new LogoutRequest(getModel().getUser().mUserId);
+                getModel().performRequest(logoutRequest);
+
+                DispatcherActivity.jumpToThisForLogout(getContext());
                 break;
         }
     }
@@ -92,6 +123,10 @@ public class ProfileFragment extends MainContentFragment implements View.OnClick
             if (!TextUtils.isEmpty(((UpdateProfileRequest) request).password)) {
                 DispatcherActivity.jumpToThisForLogin(getContext(), getModel().getUser());
             }
+
+            Utils.showToast(response.getMessage());
         }
+
+
     }
 }

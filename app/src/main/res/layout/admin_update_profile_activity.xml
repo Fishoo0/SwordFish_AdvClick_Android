@@ -35,8 +35,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="right"
-                    android:layout_marginLeft="150dp"
-                    android:text="AcmeS" />
+                    android:layout_marginLeft="150dp" />
 
             </FrameLayout>
 
@@ -58,13 +57,12 @@
 
                 <EditText
                     android:id="@+id/change_password_edittext"
-                    style="@style/textview_secondary_big"
+                    style="@style/swordfish_edittext"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="right"
                     android:layout_marginLeft="150dp"
-                    android:hint="新密码"
-                    android:singleLine="true" />
+                    android:hint="新密码" />
 
             </FrameLayout>
 
@@ -85,13 +83,12 @@
 
                 <EditText
                     android:id="@+id/im_qq_edittext"
-                    style="@style/textview_secondary_big"
+                    style="@style/swordfish_edittext"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="right"
                     android:layout_marginLeft="150dp"
-                    android:hint="新QQ"
-                    android:singleLine="true" />
+                    android:hint="新QQ" />
             </FrameLayout>
 
             <FrameLayout
@@ -110,13 +107,12 @@
 
                 <EditText
                     android:id="@+id/telephone_edittext"
-                    style="@style/textview_secondary_big"
+                    style="@style/swordfish_edittext"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="right"
                     android:layout_marginLeft="150dp"
-                    android:hint="新电话号码"
-                    android:singleLine="true" />
+                    android:hint="新电话号码" />
 
             </FrameLayout>
 
@@ -136,12 +132,11 @@
 
                 <EditText
                     android:id="@+id/alipay"
-                    style="@style/textview_secondary_big"
+                    style="@style/swordfish_edittext"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="right"
-                    android:layout_marginLeft="150dp"
-                    android:hint="AcmeS" />
+                    android:layout_marginLeft="150dp" />
 
             </FrameLayout>
 
@@ -163,12 +158,11 @@
 
                 <EditText
                     android:id="@+id/alipay_name"
-                    style="@style/textview_secondary_big"
+                    style="@style/swordfish_edittext"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="right"
-                    android:layout_marginLeft="150dp"
-                    android:hint="AcmeS Name" />
+                    android:layout_marginLeft="150dp" />
 
             </FrameLayout>
 
@@ -191,17 +185,6 @@
                     android:layout_height="match_parent"
                     android:orientation="vertical">
 
-                    <EditText
-                        android:id="@+id/prime_type_textview"
-                        style="@style/textview_secondary_big"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="right"
-                        android:layout_marginLeft="150dp"
-                        android:hint="会员类型"
-                        android:inputType="numberDecimal"
-                        android:visibility="gone" />
-
                     <acmes.swordfish.advclick.view.PrimeSpinner
                         android:id="@+id/spinner"
                         style="@style/MySpinnerLook"
@@ -212,12 +195,12 @@
 
                     <EditText
                         android:id="@+id/prime_type_period"
-                        style="@style/textview_secondary_big"
+                        style="@style/swordfish_edittext"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="right"
                         android:layout_marginLeft="150dp"
-                        android:hint="试用时长"
+                        android:hint="试用时长 单位小时"
                         android:inputType="numberDecimal" />
                 </LinearLayout>
             </FrameLayout>
@@ -252,7 +235,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:paddingBottom="10dp"
+                android:paddingBottom="30dp"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"
                 android:paddingTop="60dp">

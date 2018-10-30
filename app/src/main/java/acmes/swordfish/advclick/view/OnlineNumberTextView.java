@@ -29,7 +29,7 @@ public class OnlineNumberTextView extends TickingTextView {
     }
 
     private void init() {
-        setTickFrequency(1 * 1000);
+        setTickFrequency(15 * 1000);
     }
 
     @Override

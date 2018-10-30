@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
 
+import com.acmes.simpleandroid.utils.Utils;
+
 import acmes.swordfish.advclick.AdvClickActivity;
 import acmes.swordfish.advclick.R;
 import acmes.swordfish.advclick.controler.main.MainActivity;
@@ -37,4 +39,8 @@ public class AdminChooseActivity extends AdvClickActivity implements View.OnClic
     }
 
 
+    @Override
+    public void onBackPressed() {
+        Utils.backToLauncher(this);
+    }
 }

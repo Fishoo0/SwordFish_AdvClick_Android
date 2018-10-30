@@ -91,6 +91,11 @@ public class ClickMode extends AdvClickMode {
     }
 
 
+    /**
+     * 每15秒点击一次搜索的广告，每次点击生成收益并计算进收入和余额中，每次点击的收入为0.02-0.06之间的随机值 其中0.05-0.06显示为高额广告
+     *
+     * @return
+     */
     private class LocalFunctionServer extends Handler {
 
         public AcmesRequest mRequest;

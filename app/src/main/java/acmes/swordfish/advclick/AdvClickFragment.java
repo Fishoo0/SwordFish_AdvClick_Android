@@ -11,6 +11,7 @@ import com.acmes.simpleandroid.mvc.SimpleApplication;
 import com.acmes.simpleandroid.mvc.SimpleFragment;
 import com.acmes.simpleandroid.mvc.model.SimpleRequest;
 import com.acmes.simpleandroid.mvc.model.SimpleResponse;
+import com.acmes.simpleandroid.utils.Utils;
 
 /**
  * Created by fishyu on 2018/2/26.

@@ -28,14 +28,12 @@
 
                 <EditText
                     android:id="@+id/baidu_edittext"
+                    style="@style/swordfish_edittext"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="right"
                     android:layout_marginLeft="150dp"
-                    android:hint="用户名"
-                    android:singleLine="true"
-                    android:textColor="@color/textColorPrimary"
-                    android:textColorHint="@color/textColorSecondary" />
+                    android:hint="用户名" />
 
             </FrameLayout>
 
@@ -55,14 +53,12 @@
 
                 <EditText
                     android:id="@+id/google_edittext"
+                    style="@style/swordfish_edittext"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="right"
                     android:layout_marginLeft="150dp"
-                    android:hint="用户名"
-                    android:singleLine="true"
-                    android:textColor="@color/textColorPrimary"
-                    android:textColorHint="@color/textColorSecondary" />
+                    android:hint="用户名" />
             </FrameLayout>
 
             <FrameLayout
@@ -81,14 +77,12 @@
 
                 <EditText
                     android:id="@+id/sougou_edittext"
+                    style="@style/swordfish_edittext"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="right"
                     android:layout_marginLeft="150dp"
-                    android:hint="用户名"
-                    android:singleLine="true"
-                    android:textColor="@color/textColorPrimary"
-                    android:textColorHint="@color/textColorSecondary" />
+                    android:hint="用户名" />
 
             </FrameLayout>
 
@@ -108,14 +102,12 @@
 
                 <EditText
                     android:id="@+id/taobao_edittext"
+                    style="@style/swordfish_edittext"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="right"
                     android:layout_marginLeft="150dp"
-                    android:hint="用户名"
-                    android:singleLine="true"
-                    android:textColor="@color/textColorPrimary"
-                    android:textColorHint="@color/textColorSecondary" />
+                    android:hint="用户名" />
 
             </FrameLayout>
 

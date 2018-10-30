@@ -16,7 +16,7 @@ public class BLog implements Serializable {
     @SerializedName("device")
     public String mDevice;
 
-    @SerializedName("network")
+    @SerializedName("ip")
     public String mNetwork;
 
     @SerializedName("location")
@@ -24,5 +24,9 @@ public class BLog implements Serializable {
 
     @SerializedName("time")
     public String mTime;
+
+
+    @SerializedName("user")
+    public BUser mUser;
 
 }

@@ -9,7 +9,7 @@
 
     <style name="textview_primary_big" parent="textview_primary">
         <!-- Customize your theme here. -->
-        <item name="android:textSize">18sp</item>
+        <item name="android:textSize">16sp</item>
     </style>
 
 
@@ -22,12 +22,16 @@
 
     <style name="textview_secondary_big" parent="textview_secondary">
         <!-- Customize your theme here. -->
-        <item name="android:textSize">18sp</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="AlertDialog" parent="Base.Theme.AppCompat.Light.Dialog">
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
     </style>
 
 
     <style name="MySpinnerLook" parent="@android:style/Widget.TextView.SpinnerItem">
-        <item name="android:textSize">18dp</item>
+        <item name="android:textSize">16dp</item>
         <item name="android:textColor">@color/textColorSecondary</item>
     </style>
 
@@ -36,6 +40,20 @@
         <item name="android:paddingBottom">4dp</item>
         <item name="android:paddingLeft">10dp</item>
         <item name="android:paddingRight">10dp</item>
+    </style>
+
+    <style name="swordfish_edittext">
+        <item name="android:minWidth">10dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textColorHint">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="swordfish_textview_like_edittext">
+        <item name="android:minWidth">100dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
     </style>
 
 </resources>

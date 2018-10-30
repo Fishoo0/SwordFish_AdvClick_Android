@@ -1,5 +1,9 @@
 package com.acmes.simpleandroid.utils;
 
+import android.app.Activity;
+import android.app.Application;
+import android.content.ActivityNotFoundException;
+import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.text.TextUtils;
@@ -28,6 +32,17 @@ public class Utils {
         }
         return localVersion;
     }
+
+
+    public static String getIpAddress(Application application) {
+        return IPUtils.getIPAddress(true);
+    }
+
+
+    public static String getLocation(Application application) {
+        return LocationUtils.getLastLocation(application);
+    }
+
 
     /**
      * 获取本地软件版本号名称
@@ -88,6 +103,20 @@ public class Utils {
         } catch (Exception e) {
         }
         return defaultValue;
+    }
+
+
+    public static void backToLauncher(Activity context) {
+        try {
+            Intent i = new Intent(Intent.ACTION_MAIN);
+            i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK); // 必须加入new task标识
+            i.addCategory(Intent.CATEGORY_HOME);
+            context.startActivity(i);
+        } catch (ActivityNotFoundException e) {
+            context.moveTaskToBack(true);
+        } catch (SecurityException e) {
+            context.moveTaskToBack(true);
+        }
     }
 
 }

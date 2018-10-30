@@ -5,9 +5,10 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
-import android.support.v4.content.ContextCompat;
 import android.view.MenuItem;
 import android.view.View;
+
+import com.acmes.simpleandroid.utils.Utils;
 
 import acmes.swordfish.advclick.AdvClickActivity;
 import acmes.swordfish.advclick.R;
@@ -32,7 +33,7 @@ public class MainActivity extends AdvClickActivity implements BottomNavigationVi
         } else {
             mBottomNavigationView.inflateMenu(R.menu.main_bottom_nav_items);
         }
-        mBottomNavigationView.setBackgroundColor(ContextCompat.getColor(this, R.color.colorPrimaryLight));
+//        mBottomNavigationView.setBackgroundColor(0x99999999);
         mBottomNavigationView.setOnNavigationItemSelectedListener(this);
 
         // init and select the first
@@ -101,11 +102,13 @@ public class MainActivity extends AdvClickActivity implements BottomNavigationVi
 
 
     @Override
-    protected void onResume() {
-        super.onResume();
-
-        //refresh
-        ClickMode.getInstance().refreshUser();
-
+    public void onBackPressed() {
+        if (SharedPrefAccountManager.getInstance().getCurrentUser() != null && SharedPrefAccountManager.getInstance().getCurrentUser().isAdmin()) {
+            super.onBackPressed();
+        } else {
+            Utils.backToLauncher(this);
+        }
     }
+
+
 }

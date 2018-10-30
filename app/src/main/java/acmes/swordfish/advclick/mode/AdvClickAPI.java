@@ -30,7 +30,7 @@ import retrofit2.http.POST;
 public interface AdvClickAPI {
 
     // emulator use
-    String BASE_URL = "http://10.0.2.2:5000";
+    String BASE_URL = "http://192.168.199.244:5000";
 
     @POST("auth/register")
     Observable<AcmesResponse<BUser>> register(@Body RegisterRequest loginRequest);
@@ -63,14 +63,14 @@ public interface AdvClickAPI {
     @POST("admin/get_users")
     Observable<AcmesResponse<List<BUser>>> admin_user_list(@Body AdminUserListRequest request);
 
-    @POST("admin/get_log_list")
-    Observable<AcmesResponse<List<BLog>>> admin_user_log_list(@Body AdminUserLogListRequest request);
-
     @POST("admin/update_money")
     Observable<AcmesResponse<BEarn>> admin_update_money(@Body AdminUpdateMoneyRequest request);
 
     @POST("admin/onekey_withdraw")
     Observable<AcmesResponse<BEarn>> admin_onekey_withdraw(@Body AdminOneKeyWithdrawRequest request);
 
+
+    @POST("log/get_logs")
+    Observable<AcmesResponse<List<BLog>>> admin_user_log_list(@Body AdminUserLogListRequest request);
 
 }

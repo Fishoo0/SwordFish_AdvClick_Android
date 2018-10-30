@@ -23,6 +23,7 @@ import acmes.swordfish.advclick.mode.bean.BSearch;
 import acmes.swordfish.advclick.mode.bean.BUser;
 import acmes.swordfish.advclick.mode.request.ClickRequest;
 import acmes.swordfish.advclick.mode.request.SearchRequest;
+import acmes.swordfish.advclick.mode.request.UploadEarnRequest;
 import acmes.swordfish.advclick.view.OnlineNumberTextView;
 import acmes.swordfish.advclick.view.PrimeTrialTextView;
 import butterknife.BindView;
@@ -151,6 +152,12 @@ public class FunctionFragment extends MainContentFragment implements View.OnClic
                 mEarnThisTimeTextView.setText(String.format(getResources().getString(R.string.format_yuan), data.getEarnString()));
             } else {
                 mClickButton.performClick();
+            }
+        }
+
+        if (request instanceof SearchRequest || request instanceof ClickRequest || request instanceof UploadEarnRequest) {
+            if (!response.isSuccess()) {
+                Utils.showToast(response.getMessage());
             }
         }
     }

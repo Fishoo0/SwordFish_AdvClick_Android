@@ -3,11 +3,11 @@
     <string name="value_splash_version">CopyRight @AcmeBad by Version %s </string>
 
     <string name="value_common_net_error">网络错误 :(</string>
-    <string name="value_tag_with_draw">with_draw</string>
-    <string name="value_tag_function">function</string>
-    <string name="value_tag_buy">buy</string>
-    <string name="value_tag_profile">profile</string>
-    <string name="value_tag_youmeng">youmeng</string>
+    <string name="value_tag_with_draw">提现</string>
+    <string name="value_tag_function">搜索</string>
+    <string name="value_tag_buy">购买</string>
+    <string name="value_tag_profile">个人</string>
+    <string name="value_tag_youmeng">友盟</string>
     <string name="format_login_online">在线人数: %s人</string>
     <string name="format_user_info">%1$s (%2$s)</string>
     <string name="format_prime_time_left">剩余试用时间: %s</string>

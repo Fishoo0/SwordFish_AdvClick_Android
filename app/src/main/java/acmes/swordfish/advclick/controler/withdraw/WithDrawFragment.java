@@ -20,6 +20,8 @@ import acmes.swordfish.advclick.controler.login.SharedPrefAccountManager;
 import acmes.swordfish.advclick.controler.main.MainContentFragment;
 import acmes.swordfish.advclick.mode.bean.BEarn;
 import acmes.swordfish.advclick.mode.bean.BUser;
+import acmes.swordfish.advclick.mode.request.GetEarnRequest;
+import acmes.swordfish.advclick.mode.request.RequestWithDrawRequest;
 import butterknife.BindView;
 import butterknife.OnClick;
 
@@ -91,7 +93,12 @@ public class WithDrawFragment extends MainContentFragment implements View.OnClic
             updateView(data);
         }
 
-        Utils.showToast(response.getMessage());
+        if (request instanceof GetEarnRequest || request instanceof RequestWithDrawRequest) {
+            if (!response.isSuccess()) {
+                Utils.showToast(response.getMessage());
+            }
+        }
+
     }
 
     @OnClick({R.id.with_draw_request_button, R.id.with_draw_response_button})
@@ -115,7 +122,7 @@ public class WithDrawFragment extends MainContentFragment implements View.OnClic
 
         // generate result
         StringBuilder stringBuilder = new StringBuilder();
-        if (data.mLastManagerResponseAmount <= 0 || TextUtils.isEmpty(data.mLastRequestTime)) {
+        if (data.mLastRequestAmount <= 0 || TextUtils.isEmpty(data.mLastRequestTime)) {
             stringBuilder.append("无待处理提现");
         } else {
             stringBuilder.append(data.mLastRequestTime);

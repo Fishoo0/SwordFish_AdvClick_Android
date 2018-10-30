@@ -52,8 +52,7 @@ public class LoginMode extends AdvClickMode {
     public void onRequestStart(SimpleRequest request) {
         // do it first
         if (request instanceof LogoutRequest) {
-            BUser user = new BUser(((LogoutRequest) request).name, ((LogoutRequest) request).password);
-            mAccountManager.removeUser(user);
+            mAccountManager.removeUser(null);
         }
         super.onRequestStart(request);
     }

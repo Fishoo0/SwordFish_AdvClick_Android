@@ -40,7 +40,8 @@ public class UpdateProfileRequest extends AcmesRequest {
         this.alipay = alipay;
         this.alipay_name = alipay_name;
         this.prime_level = prime_level;
-        this.prime_period = Utils.parseLong(prime_period, -1);
+        long value = Utils.parseLong(prime_period, -1);
+        this.prime_period = value > 0 ? value * 60 * 60 : value;
         this.youmeng_checked = youmeng_checked ? 1 : 0;
     }
 

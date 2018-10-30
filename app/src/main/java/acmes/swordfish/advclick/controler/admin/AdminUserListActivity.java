@@ -204,16 +204,11 @@ public class AdminUserListActivity extends AdvClickActivity implements View.OnCl
                 mAlipay.setText("支付宝：" + data.mAlipay);
                 mAlipayName.setText("支付宝名字：" + data.mAlipayName);
 
-                mPrime.setText("会员类型：" + data.getPrimeString() + "  " +
-                        "更新日期：" + data.mPrimeOpenTime + "  " +
-                        "终止日期：" + data.mPrimeEndTime
-                );
+                mPrime.setText("会员类型：" + data.getPrimeString());
 
                 mYoumengChecked.setText("友盟状态：" + (data.isYoumengChecked() ? " 已绑定" : "未绑定"));
-
-                mEarn.setText("余额：" + "点击查看更多具体信息");
-
-                mWithDraw.setText("提现：" + "点击查看更多具体信息");
+                mEarn.setText("\n\n点击查看更多具体信息");
+                mWithDraw.setVisibility(GONE);
 
             }
         }
