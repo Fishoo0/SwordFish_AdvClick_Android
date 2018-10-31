@@ -30,7 +30,7 @@ import retrofit2.http.POST;
 public interface AdvClickAPI {
 
     // emulator use
-    String BASE_URL = "http://192.168.199.244:5000";
+    String BASE_URL = "http://106.15.196.127:5000";
 
     @POST("auth/register")
     Observable<AcmesResponse<BUser>> register(@Body RegisterRequest loginRequest);
@@ -72,5 +72,10 @@ public interface AdvClickAPI {
 
     @POST("log/get_logs")
     Observable<AcmesResponse<List<BLog>>> admin_user_log_list(@Body AdminUserLogListRequest request);
+
+
+    String IMAGE_PATH = BASE_URL + "/image/get_image?name=";
+
+    String IMAGE_WECHAT_CARD = IMAGE_PATH + "wechat_card.png";
 
 }

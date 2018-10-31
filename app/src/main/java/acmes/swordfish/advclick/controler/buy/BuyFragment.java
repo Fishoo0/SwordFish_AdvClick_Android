@@ -10,6 +10,7 @@ import android.widget.ImageView;
 import acmes.swordfish.advclick.AdvClickApplication;
 import acmes.swordfish.advclick.R;
 import acmes.swordfish.advclick.controler.main.MainContentFragment;
+import acmes.swordfish.advclick.mode.AdvClickAPI;
 import butterknife.BindView;
 
 /**
@@ -33,6 +34,6 @@ public class BuyFragment extends MainContentFragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        AdvClickApplication.getPicasso().load("https://github.com/Fishoo0/Fish-Computer/blob/master/weixin_code.jpeg?raw=true").into(mImageView);
+        AdvClickApplication.getPicasso().load(AdvClickAPI.IMAGE_WECHAT_CARD).into(mImageView);
     }
 }
