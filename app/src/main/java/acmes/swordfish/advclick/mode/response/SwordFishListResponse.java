@@ -7,7 +7,7 @@ import java.util.List;
  * Created by fishyu on 2018/2/28.
  */
 
-public class AcmesListResponse<T extends AcmesListResponse.Data> extends AcmesResponse<T> {
+public class SwordFishListResponse<T extends SwordFishListResponse.Data> extends SwordFishResponse<T> {
 
     public static class Data<T extends List> implements Serializable {
 

@@ -10,8 +10,7 @@ import android.widget.Toast;
 import com.acmes.simpleandroid.mvc.model.SimpleRequest;
 import com.acmes.simpleandroid.mvc.model.SimpleResponse;
 
-import acmes.swordfish.advclick.AdvClickActivity;
-import acmes.swordfish.advclick.controler.admin.AdminChooseActivity;
+import acmes.swordfish.advclick.SwordFishActivity;
 import acmes.swordfish.advclick.controler.main.MainActivity;
 import acmes.swordfish.advclick.mode.bean.BUser;
 import acmes.swordfish.advclick.mode.request.LoginRequest;
@@ -22,7 +21,7 @@ import acmes.swordfish.advclick.mode.request.LoginRequest;
  * <p>
  * This class would never be destroyed for dispatching.
  */
-public class DispatcherActivity extends AdvClickActivity<LoginMode> {
+public class DispatcherActivity extends SwordFishActivity<LoginMode> {
 
     public static final int CMD_AUTO = 0;
     public static final int CMD_LOGOUT = 1;
@@ -69,11 +68,7 @@ public class DispatcherActivity extends AdvClickActivity<LoginMode> {
                 } else {
                     Log.v(TAG, "\t refresh login status, goto MainActivity");
                     getModel().login(new LoginRequest(mAccountManager.getCurrentUser().mUserName));
-                    if (SharedPrefAccountManager.getInstance().getCurrentUser().isAdmin()) {
-                        startActivity(new Intent(DispatcherActivity.this, AdminChooseActivity.class));
-                    } else {
-                        startActivity(new Intent(DispatcherActivity.this, MainActivity.class));
-                    }
+                    startActivity(new Intent(DispatcherActivity.this, MainActivity.class));
                 }
                 break;
         }

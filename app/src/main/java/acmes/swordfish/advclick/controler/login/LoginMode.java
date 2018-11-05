@@ -5,7 +5,7 @@ import android.text.TextUtils;
 import com.acmes.simpleandroid.mvc.model.SimpleRequest;
 import com.acmes.simpleandroid.mvc.model.SimpleResponse;
 
-import acmes.swordfish.advclick.AdvClickMode;
+import acmes.swordfish.advclick.SwordFishMode;
 import acmes.swordfish.advclick.mode.bean.BUser;
 import acmes.swordfish.advclick.mode.request.LoginRequest;
 import acmes.swordfish.advclick.mode.request.LogoutRequest;
@@ -15,7 +15,7 @@ import acmes.swordfish.advclick.mode.request.RegisterRequest;
  * Created by fishyu on 2018/1/2.
  */
 
-public class LoginMode extends AdvClickMode {
+public class LoginMode extends SwordFishMode {
 
     private static LoginMode mLoginMode = new LoginMode();
     public IAccountManager mAccountManager = SharedPrefAccountManager.getInstance();

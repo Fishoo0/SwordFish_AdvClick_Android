@@ -8,7 +8,7 @@ import android.util.Log;
 
 import com.google.gson.Gson;
 
-import acmes.swordfish.advclick.AdvClickApplication;
+import acmes.swordfish.advclick.SwordFishApplication;
 import acmes.swordfish.advclick.mode.bean.BUser;
 
 /**
@@ -19,7 +19,7 @@ public class SharedPrefAccountManager implements IAccountManager {
 
     private static final String TAG = SharedPrefAccountManager.class.getSimpleName();
 
-    private static SharedPrefAccountManager mInstance = new SharedPrefAccountManager(AdvClickApplication.getInstance());
+    private static SharedPrefAccountManager mInstance = new SharedPrefAccountManager(SwordFishApplication.getInstance());
 
     private static final String ACCOUNT = "Account";
     private static final String KEY_ACCOUNT = "key_account";

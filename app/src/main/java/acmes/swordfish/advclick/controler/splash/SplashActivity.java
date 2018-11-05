@@ -13,8 +13,8 @@ import android.widget.TextView;
 import com.acmes.simpleandroid.utils.PermissionUtils;
 import com.acmes.simpleandroid.utils.Utils;
 
-import acmes.swordfish.advclick.AdvClickActivity;
-import acmes.swordfish.advclick.AdvClickApplication;
+import acmes.swordfish.advclick.SwordFishActivity;
+import acmes.swordfish.advclick.SwordFishApplication;
 import acmes.swordfish.advclick.R;
 import acmes.swordfish.advclick.controler.login.DispatcherActivity;
 import butterknife.BindView;
@@ -24,7 +24,7 @@ import hugo.weaving.DebugLog;
  * Created by fishyu on 2018/1/2.
  */
 
-public class SplashActivity extends AdvClickActivity implements AdvClickApplication.IInitializeListener {
+public class SplashActivity extends SwordFishActivity implements SwordFishApplication.IInitializeListener {
 
     @BindView(R.id.version)
     TextView mTextView;
@@ -42,7 +42,7 @@ public class SplashActivity extends AdvClickActivity implements AdvClickApplicat
         setContentView(R.layout.splash_activity);
 
         mTextView.setText(String.format(getString(R.string.value_splash_version), Utils.getPackageVersionName()));
-        AdvClickApplication.getInstance().registerInitializeListener(SplashActivity.this);
+        SwordFishApplication.getInstance().registerInitializeListener(SplashActivity.this);
     }
 
     @Override
@@ -75,7 +75,7 @@ public class SplashActivity extends AdvClickActivity implements AdvClickApplicat
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        AdvClickApplication.getInstance().unregisterInitializeListener(SplashActivity.this);
+        SwordFishApplication.getInstance().unregisterInitializeListener(SplashActivity.this);
     }
 
 

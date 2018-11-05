@@ -14,9 +14,9 @@ import com.acmes.simpleandroid.mvc.model.SimpleResponse;
  * Created by fishyu on 2018/1/2.
  */
 
-public class AdvClickActivity<T extends AdvClickMode> extends SimpleActivity<T> implements SwipeRefreshLayout.OnRefreshListener {
+public class SwordFishActivity<T extends SwordFishMode> extends SimpleActivity<T> implements SwipeRefreshLayout.OnRefreshListener {
 
-    static final SwipeRefreshLayout EMPTY = new SwipeRefreshLayout(AdvClickApplication.getInstance());
+    static final SwipeRefreshLayout EMPTY = new SwipeRefreshLayout(SwordFishApplication.getInstance());
 
     private SwipeRefreshLayout mSwipeRefreshLayout;
 
@@ -71,7 +71,7 @@ public class AdvClickActivity<T extends AdvClickMode> extends SimpleActivity<T> 
 
     @Override
     protected T createModel() {
-        return (T) new AdvClickMode();
+        return (T) new SwordFishMode();
     }
 
     @Override

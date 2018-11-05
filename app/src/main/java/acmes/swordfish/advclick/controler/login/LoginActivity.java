@@ -15,9 +15,8 @@ import com.acmes.simpleandroid.mvc.model.SimpleRequest;
 import com.acmes.simpleandroid.mvc.model.SimpleResponse;
 import com.acmes.simpleandroid.utils.Utils;
 
-import acmes.swordfish.advclick.AdvClickActivity;
 import acmes.swordfish.advclick.R;
-import acmes.swordfish.advclick.mode.bean.BSearch;
+import acmes.swordfish.advclick.SwordFishActivity;
 import acmes.swordfish.advclick.mode.bean.BUser;
 import acmes.swordfish.advclick.mode.request.LoginRequest;
 import butterknife.BindView;
@@ -27,7 +26,7 @@ import butterknife.OnClick;
  * Created by fishyu on 2018/1/2.
  */
 
-public class LoginActivity extends AdvClickActivity<LoginMode> implements View.OnClickListener {
+public class LoginActivity extends SwordFishActivity<LoginMode> implements View.OnClickListener {
 
     @Override
     protected LoginMode createModel() {
@@ -63,9 +62,6 @@ public class LoginActivity extends AdvClickActivity<LoginMode> implements View.O
             mUserName.setText(user.mUserName);
             mUserPassword.setText(user.mUserPassword);
         }
-
-
-        mOnlineNumber.setText(String.format(getString(R.string.format_login_online), String.valueOf(BSearch.getOnlineNumber())));
 
 
         getSupportActionBar().setTitle("登陆");

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">广告点击</string>
+    <string name="app_name">SwordFishProject</string>
     <string name="value_splash_version">CopyRight @AcmeS SwordFish Project 2018.</string>
 
     <string name="value_common_net_error">网络错误 :(</string>

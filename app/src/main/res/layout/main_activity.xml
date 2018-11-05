@@ -5,32 +5,10 @@
     android:gravity="center"
     android:paddingBottom="100dp">
 
-    <LinearLayout
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="20dp">
-
-        <Button
-            android:id="@+id/super_view"
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:onClick="onClick"
-            android:tag="@string/value_tag_function"
-            android:text="管理员界面"
-            android:textColor="#000000" />
-
-        <Button
-            android:id="@+id/normal_view"
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:layout_marginTop="40dp"
-            android:onClick="onClick"
-            android:tag="@string/value_tag_with_draw"
-            android:text="普通界面"
-            android:textColor="#000000" />
-
-    </LinearLayout>
+        android:layout_height="match_parent"
+        android:text="MainActivity" />
 
 
 </RelativeLayout>

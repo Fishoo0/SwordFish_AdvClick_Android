@@ -11,15 +11,14 @@ import com.acmes.simpleandroid.mvc.SimpleApplication;
 import com.acmes.simpleandroid.mvc.SimpleFragment;
 import com.acmes.simpleandroid.mvc.model.SimpleRequest;
 import com.acmes.simpleandroid.mvc.model.SimpleResponse;
-import com.acmes.simpleandroid.utils.Utils;
 
 /**
  * Created by fishyu on 2018/2/26.
  */
 
-public class AdvClickFragment<T extends AdvClickMode> extends SimpleFragment<T> implements SwipeRefreshLayout.OnRefreshListener {
+public class SwordFishFragment<T extends SwordFishMode> extends SimpleFragment<T> implements SwipeRefreshLayout.OnRefreshListener {
 
-    static final SwipeRefreshLayout EMPTY = new SwipeRefreshLayout(AdvClickApplication.getInstance());
+    static final SwipeRefreshLayout EMPTY = new SwipeRefreshLayout(SwordFishApplication.getInstance());
 
     private SwipeRefreshLayout mSwipeRefreshLayout = null;
 
@@ -82,7 +81,7 @@ public class AdvClickFragment<T extends AdvClickMode> extends SimpleFragment<T> 
 
     @Override
     protected T createModel() {
-        return (T) new AdvClickMode();
+        return (T) new SwordFishMode();
     }
 
     @Override

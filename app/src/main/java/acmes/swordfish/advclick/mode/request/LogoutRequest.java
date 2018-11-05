@@ -1,13 +1,13 @@
 package acmes.swordfish.advclick.mode.request;
 
-import acmes.swordfish.advclick.mode.AdvClickAPI;
+import acmes.swordfish.advclick.mode.ServerAPI;
 import io.reactivex.Observable;
 
 /**
  * Created by fishyu on 2018/1/3.
  */
 
-public class LogoutRequest extends AcmesRequest {
+public class LogoutRequest extends SwordFishRequest {
 
     public String id;
 
@@ -16,7 +16,7 @@ public class LogoutRequest extends AcmesRequest {
     }
 
     @Override
-    public Observable callAPI(AdvClickAPI api) {
+    public Observable callAPI(ServerAPI api) {
         return api.logout(this);
     }
 

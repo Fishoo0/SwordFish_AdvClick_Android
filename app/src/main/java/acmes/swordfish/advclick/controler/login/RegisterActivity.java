@@ -10,7 +10,7 @@ import com.acmes.simpleandroid.mvc.model.SimpleRequest;
 import com.acmes.simpleandroid.mvc.model.SimpleResponse;
 import com.acmes.simpleandroid.utils.Utils;
 
-import acmes.swordfish.advclick.AdvClickActivity;
+import acmes.swordfish.advclick.SwordFishActivity;
 import acmes.swordfish.advclick.R;
 import acmes.swordfish.advclick.mode.bean.BUser;
 import acmes.swordfish.advclick.mode.request.RegisterRequest;
@@ -20,7 +20,7 @@ import butterknife.BindView;
  * Created by fishyu on 2018/1/2.
  */
 
-public class RegisterActivity extends AdvClickActivity<LoginMode> {
+public class RegisterActivity extends SwordFishActivity<LoginMode> {
 
     @Override
     protected LoginMode createModel() {

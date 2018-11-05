@@ -1,6 +1,6 @@
 package acmes.swordfish.advclick.mode.request;
 
-import acmes.swordfish.advclick.mode.AdvClickAPI;
+import acmes.swordfish.advclick.mode.ServerAPI;
 import io.reactivex.Observable;
 
 /**
@@ -32,7 +32,7 @@ import io.reactivex.Observable;
  * youmeng text
  */
 
-public class RegisterRequest extends AcmesRequest {
+public class RegisterRequest extends SwordFishRequest {
 
     public String name;
     public String password;
@@ -58,7 +58,7 @@ public class RegisterRequest extends AcmesRequest {
 
 
     @Override
-    public Observable callAPI(AdvClickAPI api) {
+    public Observable callAPI(ServerAPI api) {
         return api.register(this);
     }
 }

@@ -4,7 +4,7 @@ import com.google.gson.annotations.SerializedName;
 
 import java.io.Serializable;
 
-import acmes.swordfish.advclick.AdvClickApplication;
+import acmes.swordfish.advclick.SwordFishApplication;
 import acmes.swordfish.advclick.R;
 
 /**
@@ -103,10 +103,9 @@ public class BUser implements Serializable {
         mUserPassword = user_password;
     }
 
-    public BEarn mEarn;
 
     public final String getPrimeString() {
-        String[] values = AdvClickApplication.getInstance().getResources().getStringArray(R.array.prime_level);
+        String[] values = SwordFishApplication.getInstance().getResources().getStringArray(R.array.prime_level);
         if (mPrimeLevel < PRIME_NORMAL || mPrimeLevel > PRIME_FORBIDDEN) {
             return values[PRIME_FORBIDDEN];
         } else {

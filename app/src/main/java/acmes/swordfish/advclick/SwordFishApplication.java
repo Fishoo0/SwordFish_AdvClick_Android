@@ -11,12 +11,12 @@ import retrofit2.Retrofit;
  * Created by fishyu on 2018/1/2.
  */
 
-public class AdvClickApplication extends SimpleApplication {
+public class SwordFishApplication extends SimpleApplication {
 
     protected SquareNetwork mSquareNetwork;
 
-    public static AdvClickApplication getInstance() {
-        return (AdvClickApplication) SimpleApplication.getInstance();
+    public static SwordFishApplication getInstance() {
+        return (SwordFishApplication) SimpleApplication.getInstance();
     }
 
     public static Picasso getPicasso() {

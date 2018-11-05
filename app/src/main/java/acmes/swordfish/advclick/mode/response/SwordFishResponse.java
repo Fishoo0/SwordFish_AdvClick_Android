@@ -6,7 +6,7 @@ import com.acmes.simpleandroid.imp.Square.RetrofitSimpleResponse;
  * Created by fishyu on 2018/1/2.
  */
 
-public class AcmesResponse<T> extends RetrofitSimpleResponse {
+public class SwordFishResponse<T> extends RetrofitSimpleResponse {
 
     public int code;
     public String message;
