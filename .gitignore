@@ -1,5 +1,10 @@
 # Created by .ignore support plugin (hsz.mobi)
 .idea/
-AdvClick.iml
+.gradle/
 build/
-/.gradle/
+app/build
+app/app.iml
+simpleandroid/build
+simpleandroid/simpleandroid.iml
+AdvClick.iml
+SimpleAndroid.iml
